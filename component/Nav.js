@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
+import ToggleTheme from "../component/ToggleTheme";
 
 const Nav = () => {
   const [dark, setDark] = useState(false);
@@ -8,6 +9,7 @@ const Nav = () => {
 
   return (
     <nav>
+      <ToggleTheme />
       <ul>
         <li>
           <Link href="/">

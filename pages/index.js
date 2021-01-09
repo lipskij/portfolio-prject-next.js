@@ -4,6 +4,10 @@ import Nav from '../component/Nav';
 import styles from '../styles/Home.module.css';
 import Footer from '../component/Footer';
 
+// add dark mode without flickering
+// add simgle page mode/option to the multi page
+// read more option to expand and see more text
+
 const Home = () => {
   // const [dark, setDark] = useState(false);
 
