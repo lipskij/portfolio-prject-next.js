@@ -37,7 +37,7 @@ li {
 }
 
 li:hover {
-  color: blueviolet;
+  color: rgb(137, 101, 170);
   transform: scale(1.1);
 }
 

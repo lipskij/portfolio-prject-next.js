@@ -4,13 +4,12 @@ import Nav from '../component/Nav';
 import styles from '../styles/Home.module.css';
 import Footer from '../component/Footer';
 
-// add dark mode without flickering
+// add dark mode without flickering (done)
 // add simgle page mode/option to the multi page
 // read more option to expand and see more text
+// has flickering in nav when navigaiting (when putting it out of nav flickering stops, idk)
 
 const Home = () => {
-  // const [dark, setDark] = useState(false);
-
   return (
     <div className={styles.container}>
       <Head>
@@ -20,9 +19,6 @@ const Home = () => {
       <Nav />
       <main className={styles.main}>
         <h1>This is Home page</h1>
-        {/* <button onClick={() => setDark(!dark)}>
-          {dark ? 'dark' : 'light'}
-        </button> */}
       </main>
       <Footer />
     </div>

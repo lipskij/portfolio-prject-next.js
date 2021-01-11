@@ -1,15 +1,10 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import ToggleTheme from "../component/ToggleTheme";
+import ToggleTheme from '../component/ToggleTheme';
 
 const Nav = () => {
-  const [dark, setDark] = useState(false);
-
-  console.log(dark);
-
   return (
     <nav>
-      <ToggleTheme />
       <ul>
         <li>
           <Link href="/">
@@ -26,9 +21,7 @@ const Nav = () => {
             <a>More</a>
           </Link>
         </li>
-        <button onClick={() => setDark(!dark)}>
-          {dark ? 'dark' : 'light'}
-        </button>
+        <ToggleTheme />
       </ul>
     </nav>
   );
