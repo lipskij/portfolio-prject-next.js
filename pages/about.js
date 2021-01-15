@@ -7,11 +7,11 @@ import Head from 'next/head';
 const About = () => {
   return (
     <>
-      <Head>
-        <title>Front End App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <div className={styles.container}>
+        <Head>
+          <title>Front End App</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
         <Nav />
         <main className={styles.main}>
           <h1>This is About page.</h1>

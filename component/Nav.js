@@ -21,8 +21,10 @@ const Nav = () => {
             <a>More</a>
           </Link>
         </li>
-        <ToggleTheme />
       </ul>
+      <div className="toggle">
+        <ToggleTheme />
+      </div>
     </nav>
   );
 };
