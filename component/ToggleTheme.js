@@ -13,10 +13,10 @@ function ToggleTheme() {
 
   if (!mount) return null;
   return (
-    <label onClick={toggleTheme} className={theme}>
+    <label onChange={toggleTheme} className={theme}>
       {theme === 'light' ? (
         <>
-          <input type="checkbox" defaultChecked/>
+          <input type="checkbox" />
           <span className="switch" />
         </>
       ) : (
@@ -26,7 +26,7 @@ function ToggleTheme() {
         </>
       )}
       <style jsx>{`
-        {/* label {
+        label {
           position: relative;
           display: inline-block;
           width: 50px;
@@ -63,12 +63,6 @@ function ToggleTheme() {
         }
         label input[type='checkbox']:checked + .switch {
           background-color: #336699;
-        } */}
-        .light {
-          color: #2d3748;
-        }
-        .dark {
-          color: #f6e05e;
         }
       `}</style>
     </label>

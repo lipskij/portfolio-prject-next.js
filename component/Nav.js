@@ -6,6 +6,7 @@ const Nav = () => {
   return (
     <nav>
       <ul>
+      <p className='logo'>{`< generic logo />`}</p>
         <li>
           <Link href="/">
             <a>Home</a>
