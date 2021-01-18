@@ -37,6 +37,16 @@
   height: 1em;
 }
 
+.single {
+  text-decoration: underline;
+  color: #6699cc;
+}
+
+.section {
+  height: 100vh;
+  padding-top: 3rem;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

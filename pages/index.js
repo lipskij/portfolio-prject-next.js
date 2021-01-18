@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Nav from '../component/Nav';
 import styles from '../styles/Home.module.css';
 import Footer from '../component/Footer';
+import Link from 'next/link';
 
 // add dark mode without flickering (done)
 // add simgle page mode/option to the multi page
@@ -25,7 +26,12 @@ const Home = () => {
           <p>Every page has a switch to turn from light mode to dark</p>
           <p>I'll be ading a text that user can unfold to read more</p>
           <p>In the About page there will be a gallery</p>
-          <p>User can switch to single page mode</p>
+          <p>
+            User can switch to single page mode{' '}
+            <Link href="/single">
+              <a className={styles.single}>Here</a>
+            </Link>
+          </p>
         </div>
       </main>
       <Footer />
