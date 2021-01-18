@@ -20,7 +20,7 @@ const Home = () => {
       <Nav />
       <main className={styles.main}>
         <h1>This is Home page</h1>
-        <div className="home-txt">
+        <div>
           <p>This page is for my portfolio</p>
           <p>It is made using React and Nextjs</p>
           <p>Every page has a switch to turn from light mode to dark</p>
