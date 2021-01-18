@@ -4,6 +4,8 @@ import styles from '../styles/Home.module.css';
 import Footer from '../component/Footer';
 import Link from 'next/link';
 import ToggleTheme from '../component/ToggleTheme';
+import Gallery from '../component/Gallery';
+import { ImageData } from '../component/ImageData';
 
 const Single = () => {
   return (
@@ -12,8 +14,8 @@ const Single = () => {
         <title>Front End App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav className='single-nav'>
-        <ul className='single-ul'>
+      <nav className="single-nav">
+        <ul className="single-ul">
           <p className="logo">{`< generic logo />`}</p>
           <li>
             <a data-page="home" href="#home">
@@ -26,7 +28,7 @@ const Single = () => {
             </a>
           </li>
           <li>
-          <a data-page="more" href="#more">
+            <a data-page="more" href="#more">
               More
             </a>
           </li>
@@ -56,6 +58,8 @@ const Single = () => {
         <a name="about"></a>
         <section className={styles.section}>
           <h1>This is About page.</h1>
+          <p>A small gallery of pictures made with CSS grid</p>
+          <Gallery slides={ImageData} />
         </section>
         <a name="more"></a>
         <section className={styles.section}>

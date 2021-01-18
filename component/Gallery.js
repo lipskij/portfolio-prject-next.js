@@ -3,12 +3,12 @@ import { ImArrowRight, ImArrowLeft } from 'react-icons/im';
 import Image from 'next/image';
 import { ImageData } from './ImageData';
 
-// make scrooling gallery
+// make scrooling gallery (done)
+// with apearing images on scrool (done)
 // gallery that uses grid
-// with apearing images on scrool
 // mobile layout gallery to open/enlarge images
 // describe what was used like nextjs Image,what it does,like optimization
-// what other thir party libraries was used, maybe framer motion
+// what other third party libraries was used, maybe framer motion
 // added react icons for arrows
 
 const Gallery = ({ slides }) => {

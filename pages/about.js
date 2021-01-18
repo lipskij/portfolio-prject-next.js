@@ -17,9 +17,7 @@ const About = () => {
         <Nav />
         <main className={styles.main}>
           <h1>This is About page</h1>
-          <div>
-            <p>A small gallery of pictures made with CSS grid</p>
-          </div>
+          <p>A small gallery of pictures made with CSS grid</p>
           <Gallery slides={ImageData} />
         </main>
         <Footer />
