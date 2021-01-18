@@ -66,3 +66,34 @@ a {
   padding-left: 5rem;
   color: var(--text-color);
 }
+
+.slider {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(0.95);
+}
+
+.image {
+  width: 500px;
+  height: 350px;
+  padding-bottom: 1rem;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.btn-prev,
+.btn-next {
+  cursor: pointer;
+}

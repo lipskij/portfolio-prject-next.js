@@ -1,34 +1,57 @@
-import React from 'react';
-import styles from '../styles/Home.module.css';
+import React, { useState } from 'react';
+import { BiLeftArrow, BiRightArrow } from 'react-icons/bi';
 import Image from 'next/image';
+import { ImageData } from './ImageData';
 
 // make scrooling gallery
 // gallery that uses grid
 // with apearing images on scrool
 // mobile layout gallery to open/enlarge images
+// describe what was used like nextjs Image,what it does,like optimization
+// what other thir party libraries was used, maybe framer motion
 
-const photos = [
-  {
-    imageUrl: '/bike-img1.jpg',
-  },
-  {
-    imageUrl: '/bike-img2.jpg',
-  },
-  {
-    imageUrl: '/bike-img3.jpg',
-  },
-  {
-    imageUrl: '/bike-img4.jpg',
-  },
-];
+const Gallery = ({ slides }) => {
+  const [current, setCurrent] = useState(0);
+  const length = slides.length;
 
-const Gallery = () => {
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+
+  if (!Array.isArray(slides) || slides.lenth <= 0) {
+    return null;
+  }
+
   return (
-    <div className={styles.main}>
-      {photos.map(({ imageUrl }) => {
-        return <Image src={imageUrl} key={imageUrl} alt="bike" width={500} height={300}/>;
+    <section className="slider">
+      {ImageData.map((slide, index) => {
+        return (
+          <div
+            className={index === current ? 'slide active' : 'slide'}
+            key={index}
+          >
+            {index === current && (
+              <Image
+                className="image"
+                src={slide.imageUrl}
+                key={index}
+                alt="bikes"
+                width={500}
+                height={300}
+              />
+            )}
+          </div>
+        );
       })}
-    </div>
+      <div className="buttons">
+        <BiLeftArrow className="btn-prev" onClick={prevSlide} />
+        <BiRightArrow className="btn-next" onClick={nextSlide} />
+      </div>
+    </section>
   );
 };
 

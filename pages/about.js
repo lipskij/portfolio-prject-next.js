@@ -4,6 +4,7 @@ import Footer from '../component/Footer';
 import styles from '../styles/Home.module.css';
 import Head from 'next/head';
 import Gallery from '../component/Gallery';
+import { ImageData } from '../component/ImageData';
 
 const About = () => {
   return (
@@ -19,7 +20,7 @@ const About = () => {
           <div>
             <p>A small gallery of pictures made with CSS grid</p>
           </div>
-          <Gallery />
+          <Gallery slides={ImageData} />
         </main>
         <Footer />
       </div>
