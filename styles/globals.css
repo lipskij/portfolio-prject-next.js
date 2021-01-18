@@ -89,11 +89,13 @@ a {
 .buttons {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 95%;
 }
 
-.btn-prev,
-.btn-next {
+.btn-prev:hover,
+.btn-next:hover {
   cursor: pointer;
+  transition-duration: 0.3s;
+  transform: scale(1.5);
 }

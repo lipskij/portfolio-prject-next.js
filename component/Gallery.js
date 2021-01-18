@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BiLeftArrow, BiRightArrow } from 'react-icons/bi';
+import { ImArrowRight, ImArrowLeft } from 'react-icons/im';
 import Image from 'next/image';
 import { ImageData } from './ImageData';
 
@@ -9,6 +9,7 @@ import { ImageData } from './ImageData';
 // mobile layout gallery to open/enlarge images
 // describe what was used like nextjs Image,what it does,like optimization
 // what other thir party libraries was used, maybe framer motion
+// added react icons for arrows
 
 const Gallery = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -48,8 +49,8 @@ const Gallery = ({ slides }) => {
         );
       })}
       <div className="buttons">
-        <BiLeftArrow className="btn-prev" onClick={prevSlide} />
-        <BiRightArrow className="btn-next" onClick={nextSlide} />
+        <ImArrowLeft className="btn-prev" onClick={prevSlide} />
+        <ImArrowRight className="btn-next" onClick={nextSlide} />
       </div>
     </section>
   );
