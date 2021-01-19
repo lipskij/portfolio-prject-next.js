@@ -99,3 +99,15 @@ a {
   transition-duration: 0.3s;
   transform: scale(1.5);
 }
+
+.gal-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-count: 3;
+  gap: 10px;
+}
+
+.fetch-img {
+  width: 300px;
+  height: 300px;
+}
