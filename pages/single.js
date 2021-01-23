@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Footer from '../component/Footer';
 import Link from 'next/link';
 import ToggleTheme from '../component/ToggleTheme';
 import Gallery from '../component/Gallery';
+import GalleryTwo from '../component/GalleryTwo';
 import { ImageData } from '../component/ImageData';
 
 const Single = () => {
+  const [gallery, setGallery] = useState(false);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -59,7 +62,17 @@ const Single = () => {
         <section className={styles.section}>
           <h1>This is About page.</h1>
           <p>A small gallery of pictures made with CSS grid</p>
-          <Gallery slides={ImageData} />
+          {gallery ? (
+            <div>
+              <Gallery slides={ImageData} />
+              <button className="change-gal" onClick={() => setGallery(false)}>Big</button>
+            </div>
+          ) : (
+            <div>
+              <GalleryTwo />
+              <button className="change-gal" onClick={() => setGallery(true)}>Small</button>
+            </div>
+          )}
         </section>
         <a name="more"></a>
         <section className={styles.section}>

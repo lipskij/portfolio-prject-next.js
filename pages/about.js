@@ -28,12 +28,16 @@ const About = () => {
           {gallery ? (
             <div>
               <Gallery slides={ImageData} />
-              <button onClick={() => setGallery(false)}>Big</button>
+              <button className="change-gal" onClick={() => setGallery(false)}>
+                Big
+              </button>
             </div>
           ) : (
             <div>
               <GalleryTwo />
-              <button onClick={() => setGallery(true)}>Small</button>
+              <button className="change-gal" onClick={() => setGallery(true)}>
+                Small
+              </button>
             </div>
           )}
         </main>

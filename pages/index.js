@@ -6,7 +6,7 @@ import Footer from '../component/Footer';
 import Link from 'next/link';
 
 // add dark mode without flickering (done)
-// add simgle page mode/option to the multi page
+// add simgle page mode/option to the multi page(done)
 // read more option to expand and see more text
 // has flickering in nav when navigaiting (when putting it out of nav flickering stops, idk)
 
