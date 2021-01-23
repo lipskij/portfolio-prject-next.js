@@ -7,10 +7,10 @@ const GalleryTwo = () => {
   return (
     <section className="gal-two">
       {FetchData.map((img) => {
-      console.log(img.url)
+        console.log(img.url);
         return (
           <div key={img.url}>
-            <img className='fetch-img' src={img.url} key={img.url} />
+            <img className="fetch-img" src={img.url} key={img.url} width={300} height={300}/>
           </div>
         );
       })}

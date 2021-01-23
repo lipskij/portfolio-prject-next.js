@@ -25,8 +25,17 @@ const About = () => {
         <main className={styles.main}>
           <h1>This is About page</h1>
           <p>A small gallery of pictures made with CSS grid</p>
-          {gallery ? <Gallery slides={ImageData} /> : <GalleryTwo />}
-          <button onClick={() => setGallery(true)}>hey</button>
+          {gallery ? (
+            <div>
+              <Gallery slides={ImageData} />
+              <button onClick={() => setGallery(false)}>Big</button>
+            </div>
+          ) : (
+            <div>
+              <GalleryTwo />
+              <button onClick={() => setGallery(true)}>Small</button>
+            </div>
+          )}
         </main>
         <Footer />
       </div>
