@@ -23,21 +23,21 @@ const About = () => {
         </Head>
         <Nav />
         <main className={styles.main}>
-          <h1>This is About page</h1>
-          <p>A small gallery of pictures made with CSS grid</p>
+          <h1>This is Gallery</h1>
+          <p>A small gallery of pictures made with {gallery ? 'slider' : 'CSS grid'}</p>
           {gallery ? (
             <div>
-              <Gallery slides={ImageData} />
               <button className="change-gal" onClick={() => setGallery(false)}>
-                Big
+                Grid
               </button>
+              <Gallery slides={ImageData} />
             </div>
           ) : (
             <div>
-              <GalleryTwo />
               <button className="change-gal" onClick={() => setGallery(true)}>
-                Small
+                Slider
               </button>
+              <GalleryTwo />
             </div>
           )}
         </main>

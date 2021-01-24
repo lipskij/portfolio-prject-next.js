@@ -27,7 +27,7 @@ const Single = () => {
           </li>
           <li>
             <a data-page="about" href="#about">
-              About
+              Gallery
             </a>
           </li>
           <li>
@@ -61,16 +61,16 @@ const Single = () => {
         <a name="about"></a>
         <section className={styles.section}>
           <h1>This is About page.</h1>
-          <p>A small gallery of pictures made with CSS grid</p>
+          <p>A small gallery of pictures made with {gallery ? 'slider' : 'CSS grid'}</p>
           {gallery ? (
             <div>
+              <button className="change-gal" onClick={() => setGallery(false)}>Grid</button>
               <Gallery slides={ImageData} />
-              <button className="change-gal" onClick={() => setGallery(false)}>Big</button>
             </div>
           ) : (
             <div>
+              <button className="change-gal" onClick={() => setGallery(true)}>Slider</button>
               <GalleryTwo />
-              <button className="change-gal" onClick={() => setGallery(true)}>Small</button>
             </div>
           )}
         </section>
