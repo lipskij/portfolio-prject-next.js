@@ -29,6 +29,10 @@ const Gallery = ({ slides }) => {
 
   return (
     <section className="slider">
+      <div className="buttons">
+        <ImArrowLeft className="btn-prev" onClick={prevSlide} size={30}/>
+        <ImArrowRight className="btn-next" onClick={nextSlide} size={30}/>
+      </div>
       {ImageData.map((slide, index) => {
         return (
           <div
@@ -48,10 +52,7 @@ const Gallery = ({ slides }) => {
           </div>
         );
       })}
-      <div className="buttons">
-        <ImArrowLeft className="btn-prev" onClick={prevSlide} />
-        <ImArrowRight className="btn-next" onClick={nextSlide} />
-      </div>
+      {/* <div className="buttons"></div> */}
     </section>
   );
 };

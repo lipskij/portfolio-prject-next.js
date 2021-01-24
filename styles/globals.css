@@ -75,6 +75,31 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 550px;
+}
+.slider .buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 150px;
+}
+.slider .btn-next {
+  left: 0;
+  filter: drop-shadow(3px 5px 1px var(--nav-color));
+  color: var(--button-color);
+}
+.slider .btn-prev {
+  right: 0;
+  filter: drop-shadow(3px 5px 1px var(--nav-color));
+  color: var(--button-color);
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+  cursor: pointer;
+  transition-duration: 0.3s;
+  color: #3b9dff;
 }
 .slide.active {
   opacity: 1;
@@ -94,20 +119,6 @@ a {
   border: none;
   outline: none;
   background-color: var(--background-color);
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 95%;
-}
-
-.btn-prev:hover,
-.btn-next:hover {
-  cursor: pointer;
-  transition-duration: 0.3s;
-  transform: scale(1.5);
 }
 
 .gal-two {
@@ -142,15 +153,18 @@ a {
   cursor: pointer;
   border-radius: 5px;
   width: 4rem;
-  box-shadow: 5px 5px 5px 2px var(--nav-color);
+  box-shadow: 5px 5px 5px var(--nav-color);
   outline: none;
   font-size: 1rem;
 }
 
 .change-gal:hover {
   transform: scale(1.05);
+  box-shadow: 8px 8px 8px var(--nav-color);
+  background-color: #3b9dff;
+  color: var(--nav-color);
 }
 .change-gal:active {
-  box-shadow: 4px 4px 4px 2px #242424;
+  box-shadow: 8px 8px 50px var(--nav-color);
   transform: translateY(4px);
 }
