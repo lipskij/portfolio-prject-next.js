@@ -5,11 +5,11 @@ import { ImageData } from './ImageData';
 
 // make scrooling gallery (done)
 // with apearing images on scrool (done)
-// gallery that uses grid
+// gallery that uses grid (done)
 // mobile layout gallery to open/enlarge images
 // describe what was used like nextjs Image,what it does,like optimization
 // what other third party libraries was used, maybe framer motion
-// added react icons for arrows
+// added react icons for arrows (done)
 
 const Gallery = ({ slides }) => {
   const [current, setCurrent] = useState(0);

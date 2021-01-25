@@ -139,12 +139,6 @@ a {
   transform: scale(1.05);
 }
 
-.fetch-img:active {
-  width: 500px;
-  height: 500px;
-  align-items: center;
-}
-
 .change-gal {
   background-color: var(--button-color);
   color: var(--text-color);
