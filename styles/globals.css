@@ -9,7 +9,7 @@ body {
   --background-color: #eeebeb;
   --text-color: #3d3d3d;
   --nav-color: #cfcfcf;
-  --button-color: #6699cc;
+  --button-color: linear-gradient(#6699cc, #547aa0);
   background-color: var(--background-color);
 }
 
@@ -17,7 +17,7 @@ body.dark {
   --background-color: #3d3d43;
   --text-color: #eeebeb;
   --nav-color: #2c2c2c;
-  --button-color: #6699cc;
+  --button-color: linear-gradient(#6699cc, #56738f);
 }
 
 * {
@@ -53,6 +53,7 @@ li {
 li:hover {
   color: #6699cc;
   transform: scale(1.1);
+  text-decoration: underline;
 }
 
 a {
@@ -99,7 +100,7 @@ a {
 .btn-next:hover {
   cursor: pointer;
   transition-duration: 0.3s;
-  color: #3b9dff;
+  color: #6699cc;
 }
 .slide.active {
   opacity: 1;
@@ -140,7 +141,7 @@ a {
 }
 
 .change-gal {
-  background-color: var(--button-color);
+  background: var(--button-color);
   color: var(--text-color);
   padding: 0.5rem;
   border: none;
