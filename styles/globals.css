@@ -136,6 +136,13 @@ a {
   border-radius: 5px;
   transition: all 0.3s;
 }
+.fetch-img-large {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 600px;
+}
 .fetch-img:hover {
   transform: scale(1.05);
 }
