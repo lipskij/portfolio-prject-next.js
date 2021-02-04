@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
-import Footer from '../component/Footer';
-import Link from 'next/link';
-import ToggleTheme from '../component/ToggleTheme';
-import Gallery from '../component/Gallery';
-import GalleryTwo from '../component/GalleryTwo';
-import { ImageData } from '../component/ImageData';
+import React, { useState } from "react";
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+import Footer from "../component/Footer";
+import Link from "next/link";
+import ToggleTheme from "../component/ToggleTheme";
+import Gallery from "../component/Gallery";
+import GalleryTwo from "../component/GalleryTwo";
+import { ImageData } from "../component/ImageData";
 
 const Single = () => {
   const [gallery, setGallery] = useState(false);
@@ -51,7 +51,7 @@ const Single = () => {
             <p>I'll be ading a text that user can unfold to read more</p>
             <p>In the About page there will be a gallery</p>
             <p>
-              User can switch to multi page mode{' '}
+              User can switch to multi page mode{" "}
               <Link href="/">
                 <a className={styles.single}>Here</a>
               </Link>
@@ -61,15 +61,22 @@ const Single = () => {
         <a name="about"></a>
         <section className={styles.section}>
           <h1>This is About page.</h1>
-          <p>A small gallery of pictures made with {gallery ? 'slider' : 'CSS grid'}</p>
+          <p>
+            A small gallery of pictures made with{" "}
+            {gallery ? "slider" : "CSS grid"}
+          </p>
           {gallery ? (
             <div>
-              <button className="change-gal" onClick={() => setGallery(false)}>Grid</button>
+              <button className="change-gal" onClick={() => setGallery(false)}>
+                Grid
+              </button>
               <Gallery slides={ImageData} />
             </div>
           ) : (
             <div>
-              <button className="change-gal" onClick={() => setGallery(true)}>Slider</button>
+              <button className="change-gal" onClick={() => setGallery(true)}>
+                Slider
+              </button>
               <GalleryTwo />
             </div>
           )}

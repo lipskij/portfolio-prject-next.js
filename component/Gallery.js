@@ -1,15 +1,7 @@
 import React, { useState } from 'react';
 import { ImArrowRight, ImArrowLeft } from 'react-icons/im';
 import Image from 'next/image';
-import { ImageData } from './ImageData';
-
-// make scrooling gallery (done)
-// with apearing images on scrool (done)
-// gallery that uses grid (done)
-// mobile layout gallery to open/enlarge images
-// describe what was used like nextjs Image,what it does,like optimization
-// what other third party libraries was used, maybe framer motion
-// added react icons for arrows (done)
+import SliderImageData from './SliderImageData';
 
 const Gallery = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -33,7 +25,7 @@ const Gallery = ({ slides }) => {
         <ImArrowLeft className="btn-prev" onClick={prevSlide} size={30}/>
         <ImArrowRight className="btn-next" onClick={nextSlide} size={30}/>
       </div>
-      {ImageData.map((slide, index) => {
+      {SliderImageData.map((slide, index) => {
         return (
           <div
             className={index === current ? 'slide active' : 'slide'}
@@ -52,7 +44,6 @@ const Gallery = ({ slides }) => {
           </div>
         );
       })}
-      {/* <div className="buttons"></div> */}
     </section>
   );
 };
