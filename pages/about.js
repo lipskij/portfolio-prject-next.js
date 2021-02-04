@@ -3,8 +3,8 @@ import Nav from "../component/Nav";
 import Footer from "../component/Footer";
 import styles from "../styles/Home.module.css";
 import Head from "next/head";
-// import Gallery from "../component/Gallery";
-// import sliderImageData from "../component/SliderImageData";
+import Gallery from "../component/Gallery";
+import SliderImageData from "../component/SliderImageData";
 import ImageData from '../component/ImageData';
 
 const About = () => {
@@ -29,7 +29,7 @@ const About = () => {
               <button className="change-gal" onClick={() => setGallery(false)}>
                 Grid
               </button>
-              {/* <Gallery slides={SliderImageData} /> */}
+              <Gallery slides={SliderImageData} />
             </div>
           ) : (
             <div>

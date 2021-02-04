@@ -1,4 +1,4 @@
-export default SliderImageData = [
+const SliderImageData = [
   {
     imageUrl: "/bike-img1.jpg",
   },
@@ -12,3 +12,5 @@ export default SliderImageData = [
     imageUrl: "/bike-img4.jpg",
   },
 ];
+
+export default SliderImageData;
