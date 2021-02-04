@@ -56,10 +56,10 @@ const OpenModal = ({ setIsOpen, url, isOpen, portalContainer }) => {
                 />
               </button>
             </figure>
-                <FaRegWindowClose
-                  className="close-btn"
-                  onClick={() => setIsOpen(!isOpen)}
-                />
+            <FaRegWindowClose
+              className="close-btn"
+              onClick={() => setIsOpen(!isOpen)}
+            />
           </div>
         </div>,
         portalContainer.current

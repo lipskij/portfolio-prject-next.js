@@ -6,7 +6,8 @@ import Link from "next/link";
 import ToggleTheme from "../component/ToggleTheme";
 import Gallery from "../component/Gallery";
 import GalleryTwo from "../component/GalleryTwo";
-import { ImageData } from "../component/ImageData";
+import ImageData from "../component/ImageData";
+import SliderImageData from "../component/SliderImageData";
 
 const Single = () => {
   const [gallery, setGallery] = useState(false);
@@ -70,14 +71,14 @@ const Single = () => {
               <button className="change-gal" onClick={() => setGallery(false)}>
                 Grid
               </button>
-              <Gallery slides={ImageData} />
+              <Gallery slides={SliderImageData} />
             </div>
           ) : (
             <div>
               <button className="change-gal" onClick={() => setGallery(true)}>
                 Slider
               </button>
-              <GalleryTwo />
+              <ImageData />
             </div>
           )}
         </section>
@@ -86,6 +87,7 @@ const Single = () => {
           <h1>This is More page</h1>
         </section>
       </main>
+      <div id="image-modal"></div>
       <Footer />
     </div>
   );
