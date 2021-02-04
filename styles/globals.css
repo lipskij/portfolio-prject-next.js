@@ -140,9 +140,9 @@ a {
 }
 
 .close-btn {
-  color: #3b9dff;
+  display: flex;
+  color: #6699cc;
   transform: scale(2);
   cursor: pointer;
-  margin-left: 10px;
-  margin-top: 4px;
+  margin-top: 20px;
 }
