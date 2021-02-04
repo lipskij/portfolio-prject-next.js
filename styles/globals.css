@@ -138,3 +138,11 @@ a {
   box-shadow: 8px 8px 50px var(--nav-color);
   transform: translateY(4px);
 }
+
+.close-btn {
+  color: #3b9dff;
+  transform: scale(2);
+  cursor: pointer;
+  margin-left: 10px;
+  margin-top: 4px;
+}

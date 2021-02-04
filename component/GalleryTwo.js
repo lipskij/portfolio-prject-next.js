@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import ReactDOM from "react-dom";
+import { FaRegWindowClose } from "react-icons/fa";
 
 const OpenModal = ({ setIsOpen, url, isOpen, portalContainer }) => {
   return isOpen
@@ -8,6 +9,9 @@ const OpenModal = ({ setIsOpen, url, isOpen, portalContainer }) => {
           <style jsx>{`
             .gallery {
               margin: 0 auto;
+              display: flex;
+              align-items: flex-start;
+              padding-top: 3rem;
             }
             .isOpen {
               display: flex;
@@ -33,6 +37,7 @@ const OpenModal = ({ setIsOpen, url, isOpen, portalContainer }) => {
               border: none;
               outline: none;
               background-color: rgba(0, 0, 0, 0);
+              display: flex;
             }
             @media screen and (max-width: 480px) {
               .gallery {
@@ -47,6 +52,10 @@ const OpenModal = ({ setIsOpen, url, isOpen, portalContainer }) => {
                   src={url}
                   className="img"
                   alt="Image"
+                  onClick={() => setIsOpen(!isOpen)}
+                />
+                <FaRegWindowClose
+                  className="close-btn"
                   onClick={() => setIsOpen(!isOpen)}
                 />
               </button>
