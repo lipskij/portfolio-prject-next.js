@@ -147,6 +147,39 @@ a {
   margin-top: 20px;
 }
 
+.more-text {
+  text-align: left;
+}
+
+.more-txt {
+  display: flex;
+  align-items: center;
+}
+
+.git-logo,
+.mail-logo,
+.fb-logo {
+  color: var(--text-color);
+  cursor: pointer;
+  margin-left: 5rem;
+  filter: drop-shadow(3px 5px 1px var(--nav-color));
+  transition-duration: 0.3s;
+}
+
+.mail-logo {
+  margin-left: 10.7rem;
+}
+.fb-logo {
+  margin-left: 11rem;
+}
+
+.git-logo:hover,
+.mail-logo:hover,
+.fb-logo:hover {
+  transform: scale(1.2);
+  transition-duration: 0.3s;
+}
+
 @media screen and (max-width: 480px) {
   .ul {
     align-items: center;
@@ -161,5 +194,31 @@ a {
   .toggle {
     padding: 1rem 0 0 1rem;
     width: 5rem;
+  }
+  .some {
+    display: flex;
+  }
+  .git-logo,
+  .mail-logo,
+  .fb-logo {
+    color: var(--text-color);
+    cursor: pointer;
+    margin-left: 2rem;
+    filter: drop-shadow(3px 5px 1px var(--nav-color));
+    transition-duration: 0.3s;
+  }
+  .slider {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding-top: 1rem;
+  }
+  .slider .buttons {
+    z-index: 2;
+    padding-top: 6rem;
+    justify-content: space-around;
   }
 }

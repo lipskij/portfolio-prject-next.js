@@ -49,7 +49,10 @@
 }
 
 .text {
-  align-items: flex-start;
+  text-align: left;
+  padding: 1rem;
+  line-height: 2;
+  width: 80vw;
 }
 
 @media screen and (max-width: 480px) {
@@ -61,5 +64,6 @@
     text-align: left;
     padding: 1rem;
     line-height: 2;
+    width: 100vw;
   }
 }

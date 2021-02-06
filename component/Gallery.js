@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ImArrowRight, ImArrowLeft } from 'react-icons/im';
+import { BiLeftArrow, BiRightArrow } from 'react-icons/bi';
 import Image from 'next/image';
 import SliderImageData from './SliderImageData';
 
@@ -22,8 +22,8 @@ const Gallery = ({ slides }) => {
   return (
     <section className="slider">
       <div className="buttons">
-        <ImArrowLeft className="btn-prev" onClick={prevSlide} size={30}/>
-        <ImArrowRight className="btn-next" onClick={nextSlide} size={30}/>
+        <BiLeftArrow className="btn-prev" onClick={prevSlide} size={30}/>
+        <BiRightArrow className="btn-next" onClick={nextSlide} size={30}/>
       </div>
       {SliderImageData.map((slide, index) => {
         return (
