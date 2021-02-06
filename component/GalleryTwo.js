@@ -43,6 +43,9 @@ const OpenModal = ({ setIsOpen, url, isOpen, portalContainer }) => {
               .gallery {
                 margin: 0 0.3rem;
               }
+              .img-btn {
+
+              }
             }
           `}</style>
           <div className="gallery">
@@ -106,6 +109,9 @@ const Item = ({ url }) => {
         @media screen and (max-width: 480px) {
           .gallery {
             margin: 0 5px;
+          }
+          .gallery img {
+          box-shadow: 8px 8px 8px var(--nav-color);
           }
         }
       `}</style>

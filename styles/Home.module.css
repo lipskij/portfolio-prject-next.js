@@ -48,9 +48,18 @@
   padding-top: 3rem;
 }
 
-@media (max-width: 600px) {
-  .grid {
+.text {
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
     width: 100%;
     flex-direction: column;
+  }
+  .text {
+    text-align: left;
+    padding: 1rem;
+    line-height: 2;
   }
 }

@@ -146,3 +146,20 @@ a {
   cursor: pointer;
   margin-top: 20px;
 }
+
+@media screen and (max-width: 480px) {
+  .ul {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .close-btn {
+    visibility: hidden;
+  }
+  .logo {
+    padding: 0;
+  }
+  .toggle {
+    padding: 1rem 0 0 1rem;
+    width: 5rem;
+  }
+}

@@ -7,6 +7,11 @@ import Gallery from "../component/Gallery";
 import SliderImageData from "../component/SliderImageData";
 import ImageData from '../component/ImageData';
 
+// add next ant prev button on second gallery
+// add responsive css for mobile and tablet
+// fill in more page with redirects to mail,fb,insta icons
+// add some animation
+
 const About = () => {
   const [gallery, setGallery] = useState(false);
 
