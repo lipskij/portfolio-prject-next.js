@@ -3,9 +3,12 @@ import Nav from "../component/Nav";
 import Footer from "../component/Footer";
 import styles from "../styles/Home.module.css";
 import Head from "next/head";
+import Link from "next/link";
 import { FaGithubAlt } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { ImFacebook2 } from "react-icons/im";
+import { GrLinkedin } from "react-icons/gr";
+
+// https://nextjs.org/docs/api-reference/next/link#if-the-child-is-a-custom-component-that-wraps-an-a-tag
 
 const More = () => {
   return (
@@ -21,27 +24,21 @@ const More = () => {
           <div className={styles.text}>
             <p className="more-txt">
               To find more projects that i did{" "}
-              <FaGithubAlt
-                className="git-logo"
-                size={30}
-                href="https://github.com/lipskij"
-              />
+              <Link href="https://github.com/lipskij">
+                <FaGithubAlt className="git-logo" size={30} />
+              </Link>
             </p>
             <p className="more-txt">
               Write me an email
-              <HiOutlineMail
-                className="mail-logo"
-                size={30}
-                href="mailto:emil.lipskij@gmail.com"
-              />
+              <Link href="mailto:emil.lipskij@gmail.com">
+                <HiOutlineMail className="mail-logo" size={30} />
+              </Link>
             </p>
             <p className="more-txt">
               Or contact me on
-              <ImFacebook2
-                className="fb-logo"
-                size={25}
-                href="https://facebook.com/"
-              />
+              <Link href="https://www.linkedin.com/in/emil-lipskij-6920831b2">
+                <GrLinkedin className="fb-logo" size={25} />
+              </Link>
             </p>
           </div>
         </main>
