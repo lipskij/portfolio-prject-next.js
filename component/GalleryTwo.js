@@ -2,6 +2,8 @@ import React, { useEffect, useState, useRef } from "react";
 import ReactDOM from "react-dom";
 import { FaRegWindowClose } from "react-icons/fa";
 
+// TODO: fix styling on mobile clashing with more page in single page layout
+
 const OpenModal = ({ setIsOpen, url, isOpen, portalContainer }) => {
   return isOpen
     ? ReactDOM.createPortal(
@@ -42,9 +44,6 @@ const OpenModal = ({ setIsOpen, url, isOpen, portalContainer }) => {
             @media screen and (max-width: 480px) {
               .gallery {
                 margin: 0 0.3rem;
-              }
-              .img-btn {
-
               }
             }
           `}</style>
@@ -111,7 +110,7 @@ const Item = ({ url }) => {
             margin: 0 5px;
           }
           .gallery img {
-          box-shadow: 8px 8px 8px var(--nav-color);
+            box-shadow: 8px 8px 8px var(--nav-color);
           }
         }
       `}</style>
