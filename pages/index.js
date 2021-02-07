@@ -5,11 +5,6 @@ import styles from '../styles/Home.module.css';
 import Footer from '../component/Footer';
 import Link from 'next/link';
 
-// add dark mode without flickering (done)
-// add simgle page mode/option to the multi page(done)
-// read more option to expand and see more text
-// has flickering in nav when navigaiting (when putting it out of nav flickering stops, idk)
-
 const Home = () => {
   return (
     <div className={styles.container}>

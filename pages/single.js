@@ -44,7 +44,7 @@ const Single = () => {
         </div>
       </nav>
       <main className={styles.main}>
-        <a name="home"></a>
+        <a className={styles.separete} name="home"></a>
         <section className={styles.section}>
           <h1>This is Home page</h1>
           <div className={styles.text}>
@@ -54,16 +54,16 @@ const Single = () => {
             <p>I'll be ading a text that user can unfold to read more.</p>
             <p>In the About page there will be a gallery.</p>
             <p>
-              User can switch to single page mode{" "}
-              <Link href="/single">
+              User can switch to multi page mode{" "}
+              <Link href="/">
                 <a className={styles.single}>Here</a>
               </Link>
             </p>
           </div>
         </section>
-        <a name="about"></a>
+        <a className={styles.separete} name="about"></a>
         <section className={styles.section}>
-          <h1>This is About page.</h1>
+          <h1>This is Gallery page.</h1>
           <p>
             A small gallery of pictures made with{" "}
             {gallery ? "slider" : "CSS grid"}
@@ -84,26 +84,32 @@ const Single = () => {
             </div>
           )}
         </section>
-        <a name="more"></a>
+        <a className={styles.separete} name="more"></a>
         <section className={styles.section}>
           <h1>This is More page</h1>
           <div className={styles.text}>
             <p className="more-txt">
               To find more projects that i did{" "}
               <Link href="https://github.com/lipskij">
-                <FaGithubAlt className="git-logo" size={30} />
+                <a target="_blank">
+                  <FaGithubAlt className="git-logo" size={30} alt="logo" />
+                </a>
               </Link>
             </p>
             <p className="more-txt">
               Write me an email
               <Link href="mailto:emil.lipskij@gmail.com">
-                <HiOutlineMail className="mail-logo" size={30} />
+                <a target="_blank">
+                  <HiOutlineMail className="mail-logo" size={30} alt="logo" />
+                </a>
               </Link>
             </p>
             <p className="more-txt">
               Or contact me on
               <Link href="https://www.linkedin.com/in/emil-lipskij-6920831b2">
-                <GrLinkedin className="fb-logo" size={25} />
+                <a target="_blank">
+                  <GrLinkedin className="fb-logo" size={25} alt="logo" />
+                </a>
               </Link>
             </p>
           </div>

@@ -2,8 +2,6 @@ import React, { useEffect, useState, useRef } from "react";
 import ReactDOM from "react-dom";
 import { FaRegWindowClose } from "react-icons/fa";
 
-// TODO: fix styling on mobile clashing with more page in single page layout
-
 const OpenModal = ({ setIsOpen, url, isOpen, portalContainer }) => {
   return isOpen
     ? ReactDOM.createPortal(
