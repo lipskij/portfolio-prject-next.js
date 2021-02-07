@@ -41,11 +41,18 @@
 .single {
   text-decoration: underline;
   color: #6699cc;
+  font-size: 1.2rem;
+}
+
+.single:hover {
+  display: inline-block;
+  text-shadow: 5px 5px 5px var(--nav-color);
+  transform: scale(1.05);
+  transition-duration: 0.3s;
 }
 
 .section {
   height: 100vh;
-  padding-top: 3rem;
 }
 
 .text {
@@ -53,7 +60,6 @@
   line-height: 2;
   padding-top: 10rem;
   width: 80vw;
-  
 }
 
 @media screen and (max-width: 480px) {
@@ -74,5 +80,10 @@
   }
   .separete {
     padding-top: 3rem;
+  }
+  .single {
+    display: inline-block;
+    text-shadow: 5px 5px 5px var(--nav-color);
+    transform: scale(1.05);
   }
 }

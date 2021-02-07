@@ -36,7 +36,7 @@ nav {
   background-color: var(--nav-color);
 }
 
-ul {
+.desctop-ul {
   display: flex;
   justify-content: space-around;
   align-items: center;

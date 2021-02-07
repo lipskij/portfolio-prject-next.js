@@ -1,0 +1,43 @@
+import React from 'react';
+
+const Hamburger = ({ onClick, toggled, className = '' }) => {
+  return (
+    <button className={`root ${className}`} onClick={onClick}>
+      <style jsx>{`
+        .root {
+          border: none;
+          background: none;
+          position: relative;
+          padding: 2px;
+          min-width: 40px;
+          min-height: 40px;
+        }
+        .bar {
+          background-color: #06BA63;
+          min-height: 2px;
+          min-width: 20px;
+          transition: transform 300ms;
+        }
+        .bar ~ .bar {
+          margin-top: 3px;
+        }
+      `}</style>
+      <style jsx>{`
+        .first {
+          transform: translateY(${toggled ? '250%' : 0}) rotateZ(${toggled ? '45deg' : 0});
+        }
+        .second {
+          transform: scaleX(${toggled ? 0 : 1});
+        }
+        .third {
+          transform: translateY(${toggled ? '-250%' : 0}) rotateZ(${toggled ? '-45deg' : 0});
+        }
+      `}</style>
+      <div className="bar first"></div>
+      <div className="bar second"></div>
+      <div className="bar third"></div>
+    </button>
+  );
+};
+
+export default Hamburger;
