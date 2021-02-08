@@ -60,6 +60,14 @@
   line-height: 2;
   padding-top: 10rem;
   width: 80vw;
+  animation-name: example;
+  animation-duration: 0.3s;
+  animation-timing-function: ease;
+}
+
+@keyframes example {
+  from {transform: translateX(-900px);}
+  to {transform: translateX(0);}
 }
 
 @media screen and (max-width: 480px) {

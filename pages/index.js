@@ -1,9 +1,10 @@
-import React from 'react';
-import Head from 'next/head';
-import Nav from '../component/Nav';
-import styles from '../styles/Home.module.css';
-import Footer from '../component/Footer';
-import Link from 'next/link';
+import React from "react";
+import Head from "next/head";
+import Nav from "../component/Nav";
+import styles from "../styles/Home.module.css";
+import Footer from "../component/Footer";
+import Link from "next/link";
+import ToggleTheme from "../component/ToggleTheme";
 
 const Home = () => {
   return (
@@ -14,6 +15,10 @@ const Home = () => {
       </Head>
       <Nav />
       <main className={styles.main}>
+        <div className="toggle">
+          <ToggleTheme />
+        </div>
+        <p>Togle theme</p>
         <h1>This is Home page</h1>
         <div className={styles.text}>
           <p>This page is for my portfolio.</p>
@@ -22,13 +27,14 @@ const Home = () => {
           <p>I'll be ading a text that user can unfold to read more.</p>
           <p>In the About page there will be a gallery.</p>
           <p>
-            User can switch to single page mode{' '}
+            User can switch to single page mode{" "}
             <Link href="/single">
               <a className={styles.single}>Here</a>
             </Link>
           </p>
         </div>
       </main>
+
       <Footer />
     </div>
   );

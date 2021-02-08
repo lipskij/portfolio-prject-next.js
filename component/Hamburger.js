@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-const Hamburger = ({ onClick, toggled, className = '' }) => {
+const Hamburger = ({ onClick, toggled, className = "" }) => {
   return (
     <button className={`root ${className}`} onClick={onClick}>
       <style jsx>{`
@@ -13,10 +13,11 @@ const Hamburger = ({ onClick, toggled, className = '' }) => {
           min-height: 40px;
         }
         .bar {
-          background-color: #06BA63;
+          background-color: #6699cc;
           min-height: 2px;
           min-width: 20px;
           transition: transform 300ms;
+          outline: none;
         }
         .bar ~ .bar {
           margin-top: 3px;
@@ -24,13 +25,15 @@ const Hamburger = ({ onClick, toggled, className = '' }) => {
       `}</style>
       <style jsx>{`
         .first {
-          transform: translateY(${toggled ? '250%' : 0}) rotateZ(${toggled ? '45deg' : 0});
+          transform: translateY(${toggled ? "250%" : 0})
+            rotateZ(${toggled ? "45deg" : 0});
         }
         .second {
           transform: scaleX(${toggled ? 0 : 1});
         }
         .third {
-          transform: translateY(${toggled ? '-250%' : 0}) rotateZ(${toggled ? '-45deg' : 0});
+          transform: translateY(${toggled ? "-250%" : 0})
+            rotateZ(${toggled ? "-45deg" : 0});
         }
       `}</style>
       <div className="bar first"></div>

@@ -5,7 +5,7 @@ const Drawer = ({ children, isOpen, className = "" }) => {
     <div className={`root ${className} ${isOpen ? "isOpen" : ""}`}>
       <style jsx>{`
         .root {
-          background-color: white;
+          background-color: #3d3d43;
           position: absolute;
           width: 100vw;
           height: 100vh;

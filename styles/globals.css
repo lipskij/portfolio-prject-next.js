@@ -36,7 +36,7 @@ nav {
   background-color: var(--nav-color);
 }
 
-.desctop-ul {
+ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -151,6 +151,9 @@ a {
   display: flex;
   align-items: center;
   text-align: left;
+  animation-name: example;
+  animation-duration: 0.3s;
+  animation-timing-function: ease;
 }
 
 .git-logo,
@@ -177,16 +180,33 @@ a {
   transition-duration: 0.3s;
 }
 
+@keyframes example {
+  from {transform: translateX(-900px);}
+  to {transform: translateX(0);}
+}
+
 @media screen and (max-width: 480px) {
-  .ul {
+  ul {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    font-weight: 700;
+    line-height: 4;
+    font-size: 1.6rem;
+  }
+  a {
+    color: #3b9dff;
+  }
+  .desctop-ul {
+    display: none;
   }
   .close-btn {
     visibility: hidden;
   }
   .logo {
     padding: 0;
+    color: #3b9dff;
   }
   .toggle {
     padding: 1rem 0 0 1rem;
@@ -203,6 +223,12 @@ a {
     margin-left: 2rem;
     filter: drop-shadow(3px 5px 1px var(--nav-color));
     transition-duration: 0.3s;
+  }
+  .mail-logo {
+    margin-left: 7.7rem;
+  }
+  .fb-logo {
+    margin-left: 8.1rem;
   }
   .slider {
     position: relative;
