@@ -25,12 +25,14 @@ const OpenModal = ({ setIsOpen, url, isOpen, portalContainer }) => {
               background: rgba(0, 0, 0, 0.5);
             }
             .gallery img {
-              width: 100%;
+              width: 35%;
               height: auto;
+              margin: 0 auto;
             }
             .gallery-image {
               width: 100%;
               height: auto;
+              margin: 0;
             }
             .img-btn {
               cursor: pointer;
@@ -43,9 +45,25 @@ const OpenModal = ({ setIsOpen, url, isOpen, portalContainer }) => {
               .gallery {
                 margin: 0 0.3rem;
               }
+              .gallery img {
+                width: 100vw;
+                height: auto;
+              }
+              .gallery-image {
+                width: 100%;
+                height: auto;
+              }
+              .img-btn {
+                margin: 0 auto;
+                padding: 0;
+              }
             }
           `}</style>
           <div className="gallery">
+              <FaRegWindowClose
+                className="close-btn"
+                onClick={() => setIsOpen(!isOpen)}
+              />
             <figure className="gallery-image">
               <button className="img-btn">
                 <img
@@ -56,10 +74,6 @@ const OpenModal = ({ setIsOpen, url, isOpen, portalContainer }) => {
                 />
               </button>
             </figure>
-            <FaRegWindowClose
-              className="close-btn"
-              onClick={() => setIsOpen(!isOpen)}
-            />
           </div>
         </div>,
         portalContainer.current
@@ -84,18 +98,19 @@ const Item = ({ url }) => {
           padding-top: 1rem;
         }
         .gallery img {
-          width: 200px;
-          height: 200px;
-          border-radius: 5px;
+          width: 80%;
+          height: auto;
           transition: all 0.3s;
         }
         .gallery img:hover {
-          transform: scale(1.05);
+          transform: scale(1.03);
           box-shadow: 8px 8px 8px var(--nav-color);
         }
         .gallery-image {
-          width: 200px;
-          height: 200px;
+          width: 100%;
+          height: auto;
+          margin: 0 auto;
+          padding: 0;
         }
         .img-btn {
           cursor: pointer;

@@ -1,23 +1,27 @@
-import React from 'react';
-import GalleryTwo from './GalleryTwo';
+import React from "react";
+import GalleryTwo from "./GalleryTwo";
 
 const FetchData = [
   {
-    url: 'https://picsum.photos/300/400',
+    url: "/photo.jpg",
   },
   {
-    url: 'https://picsum.photos/500',
+    url: "/photo7.jpg",
   },
   {
-    url: 'https://picsum.photos/300',
+    url: "/photo3.jpg",
   },
   {
-    url: 'https://picsum.photos/400',
+    url: "/photo4.jpg",
   },
   {
-    url: 'https://picsum.photos/600',
-  },{
-    url: 'https://picsum.photos/700',
+    url: "/photo5.jpg",
+  },
+  {
+    url: "/photo6.jpg",
+  },
+  {
+    url: "/photo2.jpg",
   },
 ];
 
@@ -25,15 +29,12 @@ function Gal() {
   return (
     <div className="try">
       {FetchData.map(({ url }) => (
-        <GalleryTwo
-          url={url}
-          key={url}
-        />
+        <GalleryTwo url={url} key={url} />
       ))}
       <style jsx>{`
         .try {
           transform: scale(1);
-          line-height: 4;
+          line-height: 7;
           column-count: 3;
           column-gap: 0px;
         }
