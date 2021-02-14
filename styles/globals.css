@@ -51,9 +51,10 @@ li {
 }
 
 li:hover {
-  color: #6699cc;
+  color: #2b8cec;
   transform: scale(1.1);
   text-decoration: underline;
+  transition: 0.2s;
 }
 
 a {
@@ -117,7 +118,7 @@ a {
 
 .change-gal {
   background: var(--button-color);
-  color: var(--text-color);
+  color: #eeebeb;
   padding: 0.5rem;
   border: none;
   cursor: pointer;

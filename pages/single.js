@@ -39,11 +39,11 @@ const Single = () => {
             </a>
           </li>
         </ul>
+      </nav>
+      <main className={styles.main}>
         <div className="toggle">
           <ToggleTheme />
         </div>
-      </nav>
-      <main className={styles.main}>
         <a className={styles.separete} name="home"></a>
         <section className={styles.section}>
           <h1>This is Home page</h1>
