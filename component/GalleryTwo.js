@@ -6,12 +6,14 @@ const OpenModal = ({ setIsOpen, url, isOpen, portalContainer }) => {
   return isOpen
     ? ReactDOM.createPortal(
         <div className="isOpen">
+          <FaRegWindowClose
+            className="close-btn"
+            onClick={() => setIsOpen(!isOpen)}
+          />
           <style jsx>{`
             .gallery {
               margin: 0 auto;
               display: flex;
-              align-items: flex-start;
-              padding-top: 3rem;
             }
             .isOpen {
               display: flex;
@@ -23,10 +25,12 @@ const OpenModal = ({ setIsOpen, url, isOpen, portalContainer }) => {
               top: 0;
               bottom: 0;
               background: rgba(0, 0, 0, 0.5);
+              max-height: 100vh;
             }
             .gallery img {
-              width: 35%;
-              height: auto;
+              width: auto;
+              height: 90vh;
+              padding-top: 3rem;
               margin: 0 auto;
             }
             .gallery-image {
@@ -46,7 +50,7 @@ const OpenModal = ({ setIsOpen, url, isOpen, portalContainer }) => {
                 margin: 0 0.3rem;
               }
               .gallery img {
-                width: 100vw;
+                width: 95vw;
                 height: auto;
               }
               .gallery-image {
@@ -59,11 +63,8 @@ const OpenModal = ({ setIsOpen, url, isOpen, portalContainer }) => {
               }
             }
           `}</style>
+
           <div className="gallery">
-              <FaRegWindowClose
-                className="close-btn"
-                onClick={() => setIsOpen(!isOpen)}
-              />
             <figure className="gallery-image">
               <button className="img-btn">
                 <img
@@ -120,7 +121,7 @@ const Item = ({ url }) => {
         }
         @media screen and (max-width: 480px) {
           .gallery {
-            margin: 0 5px;
+            margin: 0 auto;
           }
           .gallery img {
             box-shadow: 8px 8px 8px var(--nav-color);

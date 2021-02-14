@@ -141,8 +141,15 @@ a {
 
 .close-btn {
   display: flex;
-  color: #3b9dff;
-  transform: scale(2);
+  align-items: flex-start;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 6rem;
+  bottom: 0;
+  color: var(--text-color);
+  transform: scale(3);
   cursor: pointer;
   margin-left: 50px;
 }
@@ -181,8 +188,12 @@ a {
 }
 
 @keyframes example {
-  from {transform: translateX(-900px);}
-  to {transform: translateX(0);}
+  from {
+    transform: translateX(-900px);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 @media screen and (max-width: 480px) {
