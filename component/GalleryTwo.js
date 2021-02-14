@@ -99,7 +99,7 @@ const Item = ({ url }) => {
           padding-top: 1rem;
         }
         .gallery img {
-          width: 80%;
+          width: 95%;
           height: auto;
           transition: all 0.3s;
         }
@@ -118,6 +118,7 @@ const Item = ({ url }) => {
           border: none;
           outline: none;
           background-color: var(--background-color);
+          padding: 0;
         }
         @media screen and (max-width: 480px) {
           .gallery {

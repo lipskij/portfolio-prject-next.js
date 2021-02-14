@@ -34,9 +34,10 @@ function Gal() {
       <style jsx>{`
         .try {
           transform: scale(1);
-          line-height: 7;
+          line-height: 2;
           column-count: 3;
           column-gap: 0px;
+          padding: 0 5rem 0 5rem;
         }
         @media screen and (max-width: 480px) {
           .try {
@@ -44,6 +45,7 @@ function Gal() {
             column-count: 1;
             column-gap: 0px;
             margin: 0 auto;
+            padding: 0 2.5rem 0 2.5rem;
           }
         }
       `}</style>
