@@ -45,23 +45,7 @@ const More = () => {
               </Link>
             </p>
           </div>
-          <footer className={styles.more}>
-            <ul className='more-bottom'>
-              <li>Contact number +370 12 34 567</li>
-              <li>Visit www.link.com</li>
-              <li>Terms and condisions</li>
-            </ul>
-            <ul className='more-bottom'>
-              <li>About</li>
-              <li>Projects</li>
-              <li>Privacy policy</li>
-            </ul>
-            <ul className='more-bottom'>
-              <li>Help</li>
-              <li>FQA</li>
-              <li>Blog</li>
-            </ul>
-          </footer>
+          
         </main>
         <Footer />
       </div>
