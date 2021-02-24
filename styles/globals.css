@@ -173,6 +173,16 @@ a {
   margin-left: 11rem;
 }
 
+.more-bottom {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  flex-direction: column;
+  line-height: 2;
+  padding-top: 5rem;
+  cursor: pointer;
+}
+
 @keyframes example {
   from {
     transform: translateX(-900px);
