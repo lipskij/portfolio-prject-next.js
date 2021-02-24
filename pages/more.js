@@ -45,7 +45,7 @@ const More = () => {
               </Link>
             </p>
           </div>
-          <div className={styles.more}>
+          <footer className={styles.more}>
             <ul className='more-bottom'>
               <li>Contact number +370 12 34 567</li>
               <li>Visit www.link.com</li>
@@ -61,7 +61,7 @@ const More = () => {
               <li>FQA</li>
               <li>Blog</li>
             </ul>
-          </div>
+          </footer>
         </main>
         <Footer />
       </div>
