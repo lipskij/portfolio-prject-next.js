@@ -63,9 +63,10 @@ a {
 }
 .toggle {
   display: flex;
-  padding: 1rem 0 0 2rem;
-  width: 5.5rem;
+  padding-left: 5rem;
+  width: 80vw;
 }
+
 .logo {
   padding-left: 5rem;
   color: var(--text-color);
@@ -183,6 +184,12 @@ a {
   cursor: pointer;
 }
 
+.image-svg {
+  margin-top: 5rem;
+  animation: spin 5s infinite;
+  box-shadow: 2px 4px 40px 2px rgb(187, 92, 206);
+}
+
 @keyframes example {
   from {
     transform: translateX(-900px);
@@ -208,6 +215,18 @@ a {
   0% { transform: translate(-50%, -50%) scale(1.25, 0.80); }
   50% { transform: translate(-50%, -150%) scale(1, 1); }
   100% { transform: translate(-50%, -50%) scale(1.25, 0.80); }
+}
+
+@keyframes spin {
+  0% {
+      transform:rotate(0deg) scale(0.8); 
+  }
+  50% {
+    transform:rotate(90deg) scale(1.2);
+  }
+  100% {
+      transform:rotate(0deg) scale(0.8);
+  }
 }
 
 @media screen and (max-width: 480px) {

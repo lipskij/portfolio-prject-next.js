@@ -18,11 +18,13 @@ function ToggleTheme() {
         <>
           <input type="checkbox" />
           <span className="switch" />
+          <p className='togl-txt'>Darck mode</p>
         </>
       ) : (
         <>
           <input type="checkbox" defaultChecked />
           <span className="switch" />
+          <p className='togl-txt'>Light mode</p>
         </>
       )}
       <style jsx>{`
@@ -63,6 +65,12 @@ function ToggleTheme() {
         }
         label input[type='checkbox']:checked + .switch {
           background-color: #336699;
+        }
+        .togl-txt {
+          padding: 2.5rem 0 0 0;
+          width: 10rem;
+          text-align: left;
+          margin: 0;
         }
       `}</style>
     </label>

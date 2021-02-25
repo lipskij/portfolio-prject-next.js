@@ -11,15 +11,14 @@ const Home = () => {
     <div className={styles.container}>
       <Head>
         <title>Front End App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
       <Nav />
-      <main className={styles.main}>
+      <main className={styles.home}>
         <div className="toggle">
           <ToggleTheme />
         </div>
-        <p>Togle theme</p>
-        <h1>This is Home page</h1>
+        <h1>Best brand!</h1>
         <div className={styles.text}>
           <p>This page is for my portfolio.</p>
           <p>It is made using React and Nextjs.</p>
@@ -28,11 +27,23 @@ const Home = () => {
           <p>In the About page there will be a gallery.</p>
           <p>
             User can switch to single page mode{" "}
-            <Link href="/single">
+            <Link href='/single'>
               <a className={styles.single}>Here</a>
             </Link>
           </p>
         </div>
+          <svg className='image-svg' width='400' height='400'>
+            <rect
+              x='0'
+              y='0'
+              width='400'
+              height='400'
+              stroke='violet'
+              fill='transparent'
+              stroke-width='5'
+            />
+            <p>lol</p>
+          </svg>
       </main>
 
       <Footer />
