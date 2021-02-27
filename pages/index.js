@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import Footer from "../component/Footer";
 import Link from "next/link";
 import ToggleTheme from "../component/ToggleTheme";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
@@ -15,7 +16,7 @@ const Home = () => {
       </Head>
       <Nav />
       <main className={styles.home}>
-        <div className="toggle">
+        <div className='toggle'>
           <ToggleTheme />
         </div>
         <h1>Best brand!</h1>
@@ -32,18 +33,53 @@ const Home = () => {
             </Link>
           </p>
         </div>
-          <svg className='image-svg' width='400' height='400'>
-            <rect
-              x='0'
-              y='0'
-              width='400'
-              height='400'
+        <div className='image-svg'>
+          <motion.svg
+            width='300'
+            height='301'
+            viewBox='0 0 300 301'
+            fill='none'
+            xmlns='http://www.w3.org/2000/svg'
+          >
+            <motion.line
+              y1='0.5'
+              x2='0'
+              y2='0.5'
+              x1='0'
               stroke='violet'
-              fill='transparent'
-              stroke-width='5'
+              animate={{ x1: 300 }}
+              transition={{ duration: 1, delay: 1 }}
             />
-            <p>lol</p>
-          </svg>
+            <motion.line
+              y1='300.5'
+              x2='0'
+              y2='300.5'
+              x1='0'
+              stroke='violet'
+              animate={{ x1: 300 }}
+              transition={{ duration: 1 }}
+            />
+            <motion.line
+              x1='0.5'
+              y1='301'
+              x2='0.5'
+              y2='300'
+              stroke='violet'
+              animate={{ y2: 0 }}
+              transition={{ duration: 1 }}
+            />
+            <motion.line
+              x1='299.5'
+              y1='300'
+              x2='299.5'
+              y2='300'
+              stroke='violet'
+              animate={{ y2: 0 }}
+              transition={{ duration: 1, delay: 1 }}
+            />
+          </motion.svg>
+          
+        </div>
       </main>
 
       <Footer />

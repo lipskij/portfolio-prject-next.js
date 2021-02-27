@@ -128,7 +128,7 @@ a {
   box-shadow: 5px 5px 5px var(--nav-color);
   outline: none;
   font-size: 1rem;
-  animation: pulse-dot 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) -.4s infinite;
+  animation: pulse-dot 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
 }
 
 .close-btn {
@@ -185,9 +185,12 @@ a {
 }
 
 .image-svg {
-  margin-top: 5rem;
-  animation: spin 5s infinite;
-  box-shadow: 2px 4px 40px 2px rgb(187, 92, 206);
+  /* margin-top: 5rem; */
+  width: 300px;
+  height: 300px;
+  animation: appear 0.3s ease-in;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes example {
@@ -201,31 +204,47 @@ a {
 
 @keyframes pulse-dot {
   0% {
-    transform: scale(.9);
+    transform: scale(0.9);
   }
   50% {
     transform: scale(1);
   }
   100% {
-    transform: scale(.9);
+    transform: scale(0.9);
   }
 }
 
 @keyframes jump {
-  0% { transform: translate(-50%, -50%) scale(1.25, 0.80); }
-  50% { transform: translate(-50%, -150%) scale(1, 1); }
-  100% { transform: translate(-50%, -50%) scale(1.25, 0.80); }
-}
-
-@keyframes spin {
   0% {
-      transform:rotate(0deg) scale(0.8); 
+    transform: translate(-50%, -50%) scale(1.25, 0.8);
   }
   50% {
-    transform:rotate(90deg) scale(1.2);
+    transform: translate(-50%, -150%) scale(1, 1);
   }
   100% {
-      transform:rotate(0deg) scale(0.8);
+    transform: translate(-50%, -50%) scale(1.25, 0.8);
+  }
+}
+
+@keyframes appear {
+  0% {
+    box-shadow: 'none';
+  }
+  100% {
+    box-shadow: 2px 4px 40px 2px rgb(187, 92, 206);
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  0% {
+    box-shadow: 2px 4px 40px 2px rgb(187, 92, 206);
+    opacity: 1;
   }
 }
 
