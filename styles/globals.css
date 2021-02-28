@@ -185,13 +185,19 @@ a {
 }
 
 .image-svg {
-  /* margin-top: 5rem; */
+  margin-top: 5rem;
   width: 300px;
   height: 300px;
   animation: appear 0.3s ease-in;
   animation-delay: 2s;
   animation-fill-mode: forwards;
 }
+
+/* .image-svg:hover {
+  filter: hue-rotate(0) contrast(100%), hue-rotate(360) contrast(200%),
+    hue-rotate(45) contrast(300%), hue-rotate(0) contrast(100%);
+    transition: 0.3s;
+} */
 
 @keyframes example {
   from {
@@ -228,7 +234,7 @@ a {
 
 @keyframes appear {
   0% {
-    box-shadow: 'none';
+    box-shadow: "none";
   }
   100% {
     box-shadow: 2px 4px 40px 2px rgb(187, 92, 206);
@@ -240,6 +246,9 @@ a {
     opacity: 1;
   }
   30% {
+    opacity: 0;
+  }
+  70% {
     opacity: 0;
   }
   0% {
