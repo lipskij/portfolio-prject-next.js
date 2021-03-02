@@ -17,6 +17,9 @@ function MyApp({ Component, pageProps, router }) {
             },
             pageAnimate: {
               opacity: 1,
+              transition: {
+                duration: 0.3
+              }
               // filter: [
               //   "hue-rotate(0) contrast(100%)",
               //   "hue-rotate(360deg) contrast(200%)",
@@ -25,13 +28,14 @@ function MyApp({ Component, pageProps, router }) {
               // ],
             },
             pageExit: {
-              backgroundColor: "rgba(0, 0, 0, 0)",
-              filter: `invert()`,
+              backgroundColor: "#3d3d43",
+              // filter: `invert()`,
               opacity: 0,
+              scale: 0.3,
               // rotate: [0, 5, -5, 0],
-              // transition: {
-              //   duration: .3
-              // }
+              transition: {
+                duration: 0.3
+              }
             },
           }}
         >
