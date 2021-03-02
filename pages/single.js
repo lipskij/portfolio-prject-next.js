@@ -10,6 +10,7 @@ import SliderImageData from "../component/SliderImageData";
 import { FaGithubAlt } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { GrLinkedin } from "react-icons/gr";
+import Logo from '../component/Logo';
 
 const Single = () => {
   const [gallery, setGallery] = useState(false);
@@ -41,12 +42,13 @@ const Single = () => {
         </ul>
       </nav>
       <main className={styles.main}>
+        
+        <a className={styles.separete} name="home"></a>
+        <section className={styles.home}>
         <div className="toggle">
           <ToggleTheme />
         </div>
-        <a className={styles.separete} name="home"></a>
-        <section className={styles.section}>
-          <h1>This is Home page</h1>
+          <Logo />
           <div className={styles.text}>
             <p>This page is for my portfolio.</p>
             <p>It is made using React and Nextjs.</p>

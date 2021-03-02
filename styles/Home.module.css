@@ -22,7 +22,7 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: 12rem;
-  padding: 8rem 0;
+  padding: 3rem 0;
   color: var(--text-color);
   width: 90vw;
 }
@@ -105,7 +105,7 @@
   }
   .text {
     text-align: left;
-    padding: 12rem 1rem 1rem 1rem;
+    padding: 10rem 1rem 1rem 1rem;
     line-height: 2;
     width: 100vw;
     height: 100vh;
@@ -132,8 +132,8 @@
   }
   .more {
     display: flex;
-  flex-direction: column;
-  width: 95vw;
-  line-height: 2;
+    width: 95vw;
+    flex-direction: column;
+    line-height: 2;
   }
 }
