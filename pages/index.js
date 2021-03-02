@@ -19,7 +19,8 @@ const Home = () => {
         <div className='toggle'>
           <ToggleTheme />
         </div>
-        <h1>Best brand!</h1>
+        <Logo />
+
         <div className={styles.text}>
           <p>This page is for my portfolio.</p>
           <p>It is made using React and Nextjs.</p>
@@ -33,9 +34,7 @@ const Home = () => {
             </Link>
           </p>
         </div>
-        <Logo />
       </main>
-
       <Footer />
     </div>
   );
