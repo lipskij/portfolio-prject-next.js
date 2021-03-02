@@ -42,7 +42,6 @@ const Single = () => {
         </ul>
       </nav>
       <main className={styles.main}>
-        
         <a className={styles.separete} name="home"></a>
         <section className={styles.home}>
         <div className="toggle">

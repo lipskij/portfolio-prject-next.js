@@ -16,7 +16,7 @@ body {
 body.dark {
   --background-color: #3d3d43;
   --text-color: #eeebeb;
-  --nav-color: #2c2c2c;
+  --nav-color: #1a1a1a;
   --button-color: linear-gradient(#6699cc, #56738f);
 }
 
