@@ -18,24 +18,16 @@ function MyApp({ Component, pageProps, router }) {
             pageAnimate: {
               opacity: 1,
               transition: {
-                duration: 0.3
-              }
-              // filter: [
-              //   "hue-rotate(0) contrast(100%)",
-              //   "hue-rotate(360deg) contrast(200%)",
-              //   "hue-rotate(45deg) contrast(300%)",
-              //   "hue-rotate(0) contrast(100%)",
-              // ],
+                duration: 0.3,
+              },
             },
             pageExit: {
               backgroundColor: "#3d3d43",
-              // filter: `invert()`,
               opacity: 0,
-              scale: 0.3,
-              // rotate: [0, 5, -5, 0],
+              // y: 300,
               transition: {
-                duration: 0.3
-              }
+                duration: 0.3,
+              },
             },
           }}
         >
@@ -47,3 +39,12 @@ function MyApp({ Component, pageProps, router }) {
 }
 
 export default MyApp;
+
+// filter: [
+//   "hue-rotate(0) contrast(100%)",
+//   "hue-rotate(360deg) contrast(200%)",
+//   "hue-rotate(45deg) contrast(300%)",
+//   "hue-rotate(0) contrast(100%)",
+// ],
+// rotate: [0, 5, -5, 0],
+// filter: `invert()`,
