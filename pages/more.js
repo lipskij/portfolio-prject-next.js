@@ -7,6 +7,7 @@ import Link from "next/link";
 import { FaGithubAlt } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { GrLinkedin } from "react-icons/gr";
+import Image from "next/image";
 
 const More = () => {
   return (
@@ -17,8 +18,14 @@ const More = () => {
           <link rel='icon' href='/favicon.ico' />
         </Head>
         <Nav />
-        <main className={styles.main}>
+        <main className={styles.more}>
           <h1>This is More page</h1>
+          <Image
+            src='/contacts.svg'
+            alt='Contacts picture'
+            width={400}
+            height={300}
+          />
           <div className={styles.text}>
             <p className='more-txt'>
               To find more projects that i did{" "}
@@ -45,7 +52,6 @@ const More = () => {
               </Link>
             </p>
           </div>
-          
         </main>
         <Footer />
       </div>

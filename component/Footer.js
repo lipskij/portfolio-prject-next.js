@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css";
 
 const Footer = () => {
   return (
-    <footer className={styles.more}>
+    <footer className={styles.footer}>
       <ul className='more-bottom'>
         <li>Contact number +370 12 34 567</li>
         <li>Visit www.link.com</li>
