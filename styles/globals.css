@@ -190,7 +190,7 @@ a {
   width: 300px;
   height: 300px;
   animation: appear 0.3s ease-in;
-  animation-delay: 4s;
+  animation-delay: 3.3s;
   animation-fill-mode: forwards;
 }
 

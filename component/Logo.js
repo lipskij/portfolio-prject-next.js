@@ -53,40 +53,40 @@ const Logo = () => {
             fill='#86D7E5'
             opacity={0}
             animate={{ rotateY: 360, opacity: 1 }}
-            transition={{ duration: 1, delay: 2.3 }}
+            transition={{ duration: 1, delay: 3.3 }}
           />
           <motion.path
             d='M51.364 113L48.484 104.324H44.884V113H39.304V88.232H49.492C51.532 88.232 53.068 88.544 54.1 89.168C55.132 89.768 55.816 90.632 56.152 91.76C56.512 92.888 56.692 94.388 56.692 96.26C56.692 98.012 56.5 99.512 56.116 100.76C55.732 101.984 54.952 102.884 53.776 103.46L57.232 113H51.364ZM47.692 99.716C48.748 99.716 49.492 99.632 49.924 99.464C50.38 99.296 50.68 98.996 50.824 98.564C50.968 98.108 51.04 97.352 51.04 96.296C51.04 95.216 50.968 94.46 50.824 94.028C50.704 93.572 50.416 93.272 49.96 93.128C49.528 92.96 48.784 92.876 47.728 92.876H44.884V99.716H47.692Z'
             fill='#86D7E5'
             opacity={0}
             animate={{ rotateY: 360, opacity: 1 }}
-            transition={{ duration: 1, delay: 2.4 }}
+            transition={{ duration: 1, delay: 3.4 }}
           />
           <motion.path
             d='M52.66 163L51.4 158.032H44.092L42.904 163H37.288L43.912 138.232H51.76L58.348 163H52.66ZM47.836 143.272H47.62L45.208 153.424H50.284L47.836 143.272Z'
             fill='#86D7E5'
             opacity={0}
             animate={{ rotateY: 360, opacity: 1 }}
-            transition={{ duration: 1, delay: 2.5 }}
+            transition={{ duration: 1, delay: 3.5 }}
           />
           <motion.path
             d='M52.048 213L44.776 198.852H44.596V213H39.232V188.232H44.884L51.688 201.228H51.868V188.232H57.232V213H52.048Z'
             fill='#86D7E5'
             opacity={0}
             animate={{ rotateY: 360, opacity: 1 }}
-            transition={{ duration: 1, delay: 2.6 }}
+            transition={{ duration: 1, delay: 3.6 }}
           />
           <motion.path
             d='M39.304 238.232H47.08C50.2 238.232 52.42 238.592 53.74 239.312C55.084 240.032 55.912 241.184 56.224 242.768C56.56 244.352 56.728 246.968 56.728 250.616C56.728 254.264 56.56 256.88 56.224 258.464C55.912 260.048 55.084 261.2 53.74 261.92C52.42 262.64 50.2 263 47.08 263H39.304V238.232ZM46.936 258.356C48.424 258.356 49.42 258.236 49.924 257.996C50.428 257.756 50.74 257.168 50.86 256.232C51.004 255.272 51.076 253.4 51.076 250.616C51.076 247.832 51.004 245.972 50.86 245.036C50.716 244.076 50.392 243.476 49.888 243.236C49.408 242.996 48.424 242.876 46.936 242.876H44.884V258.356H46.936Z'
             fill='#86D7E5'
             opacity={0}
             animate={{ rotateY: 360, opacity: 1 }}
-            transition={{ duration: 1, delay: 2.7 }}
+            transition={{ duration: 1, delay: 3.7 }}
           />
           <motion.g
             opacity={0}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 3 }}
+            transition={{ duration: 1, delay: 4 }}
             clip-path='url(#clip0)'
           >
             <path
@@ -185,7 +185,7 @@ const Logo = () => {
               d='M174.232 96.5283C173.348 95.6973 171.959 95.7403 171.128 96.6237C170.297 97.5074 170.34 98.897 171.223 99.728L174.768 103.061C175.176 103.445 175.715 103.657 176.272 103.657C176.318 103.657 176.365 103.656 176.412 103.653C177.018 103.614 177.581 103.326 177.968 102.857L189.449 88.9066C190.219 87.9702 190.085 86.5861 189.149 85.8155C188.212 85.0448 186.828 85.1792 186.058 86.1156L176.067 98.2543L174.232 96.5283Z'
               fill='whitesmoke'
               animate={{ fill: "green" }}
-              transition={{ duration: 1, delay: 4.5 }}
+              transition={{ duration: 1, delay: 4.6 }}
             />
           </motion.g>
           <motion.line
@@ -197,7 +197,7 @@ const Logo = () => {
             stroke-width='3'
             opacity={0}
             animate={{ x1: 105, x2: 255, opacity: 1 }}
-            transition={{ duration: 1, delay: 3.4 }}
+            transition={{ duration: 1, delay: 3.7 }}
           />
           <motion.line
             x1='0'
@@ -208,7 +208,7 @@ const Logo = () => {
             stroke-width='3'
             opacity={0}
             animate={{ x1: 133, x2: 227, opacity: 1 }}
-            transition={{ duration: 1, delay: 3.4 }}
+            transition={{ duration: 1, delay: 3.7 }}
           />
           <defs>
             <clipPath id='clip0'>
