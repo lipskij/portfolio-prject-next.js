@@ -38,12 +38,3 @@ function MyApp({ Component, pageProps, router }) {
 }
 
 export default MyApp;
-
-// filter: [
-//   "hue-rotate(0) contrast(100%)",
-//   "hue-rotate(360deg) contrast(200%)",
-//   "hue-rotate(45deg) contrast(300%)",
-//   "hue-rotate(0) contrast(100%)",
-// ],
-// rotate: [0, 5, -5, 0],
-// filter: `invert()`,

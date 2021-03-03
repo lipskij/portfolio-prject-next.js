@@ -64,7 +64,7 @@ const InitialTransition = () => {
           className='container-text'
           x='50%'
           y='50%'
-          style={{ fill: "url(#pattern)", width: '90vw' }}
+          style={{ fill: "url(#pattern)", width: '100vw', margin: 0 }}
         >
           brand
         </text>

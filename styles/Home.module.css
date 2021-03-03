@@ -78,8 +78,8 @@
   padding-top: 5rem;
   width: 80vw;
   animation-name: example;
-  animation-duration: 0.5s;
-  animation-timing-function: cubic-bezier(0.49, 0.02, 0.22, 1.27);
+  animation-duration: 2s;
+  /* animation-timing-function: cubic-bezier(0.49, 0.02, 0.22, 1.27); */
 }
 
 .more {
@@ -92,9 +92,11 @@
 @keyframes example {
   from {
     transform: translateX(-900px);
+    opacity: 0;
   }
   to {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 

@@ -24,7 +24,7 @@ const More = () => {
               To find more projects that i did{" "}
               <Link href='https://github.com/lipskij'>
                 <a target='_blank'>
-                  <FaGithubAlt className='git-logo' size={30} alt='logo' />
+                  <FaGithubAlt className='git-logo' size={35} alt='logo' />
                 </a>
               </Link>
             </p>
@@ -32,7 +32,7 @@ const More = () => {
               Write me an email
               <Link href='mailto:emil.lipskij@gmail.com'>
                 <a target='_blank'>
-                  <HiOutlineMail className='mail-logo' size={30} alt='logo' />
+                  <HiOutlineMail className='mail-logo' size={35} alt='logo' />
                 </a>
               </Link>
             </p>
@@ -40,7 +40,7 @@ const More = () => {
               Or contact me on
               <Link href='https://www.linkedin.com/in/emil-lipskij-6920831b2'>
                 <a target='_blank'>
-                  <GrLinkedin className='fb-logo' size={25} alt='logo' />
+                  <GrLinkedin className='fb-logo' size={30} alt='logo' />
                 </a>
               </Link>
             </p>

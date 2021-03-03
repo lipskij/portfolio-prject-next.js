@@ -25,10 +25,9 @@ const Home = () => {
           <Logo />
           <div className={styles.text}>
             <p>This page is for my portfolio.</p>
-            <p>It is made using React and Nextjs.</p>
-            <p>Every page has a switch to turn from light mode to dark.</p>
+            <p>It is made using React and Nextjs and Framer Motion.</p>
             <p>I'll be ading a text that user can unfold to read more.</p>
-            <p>In the About page there will be a gallery.</p>
+            <p>Possibility to toggle between light and dark mode</p>
             <p>
               User can switch to single page mode{" "}
               <Link href='/single'>
