@@ -24,7 +24,6 @@ function MyApp({ Component, pageProps, router }) {
             pageExit: {
               backgroundColor: "#3d3d43",
               opacity: 0,
-              // y: 300,
               transition: {
                 duration: 0.3,
               },
