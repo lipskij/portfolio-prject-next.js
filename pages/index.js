@@ -24,6 +24,7 @@ const Home = () => {
           </div>
           <Logo />
           <div className={styles.text}>
+            <h1>Brightest ideas for YOUR Brand!</h1>
             <p>This page is for my portfolio.</p>
             <p>It is made using React and Nextjs and Framer Motion.</p>
             <p>I'll be ading a text that user can unfold to read more.</p>

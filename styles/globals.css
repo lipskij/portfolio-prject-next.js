@@ -149,10 +149,10 @@ a {
 .more-txt {
   display: flex;
   align-items: center;
-  text-align: left;
   animation-name: example;
   animation-duration: 0.5s;
   animation-timing-function: cubic-bezier(0.49, 0.02, 0.22, 1.27);
+  margin: 0;
 }
 
 .git-logo,
@@ -222,7 +222,6 @@ a {
   font-weight: 600;
   fill:#86D7E5;
 }
-
 
 @keyframes example {
   from {

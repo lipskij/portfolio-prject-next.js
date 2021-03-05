@@ -74,11 +74,9 @@
 
 .text {
   text-align: left;
-  line-height: 1.5;
   width: 40vw;
   animation-name: example;
   animation-duration: 1s;
-  height: 100vh;
 }
 
 .footer {
@@ -91,10 +89,12 @@
 .more {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
   column-gap: 2rem;
   padding: 5rem 0;
   color: var(--text-color);
   width: 90vw;
+  min-height: 100vh;
 }
 
 @keyframes example {
