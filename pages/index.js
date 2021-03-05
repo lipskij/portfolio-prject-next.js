@@ -25,6 +25,11 @@ const Home = () => {
           <Logo />
           <div className={styles.text}>
             <h1>Brightest ideas for YOUR Brand!</h1>
+            <button className='home-btn'>
+              <Link href='/more'>
+                <a>Contact Us!</a>
+              </Link>
+            </button>
             <p>This page is for my portfolio.</p>
             <p>It is made using React and Nextjs and Framer Motion.</p>
             <p>I'll be ading a text that user can unfold to read more.</p>
