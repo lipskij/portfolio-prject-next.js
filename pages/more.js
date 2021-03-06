@@ -20,6 +20,7 @@ const More = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Nav />
+        <h1 className='more-text'>Contact Us!</h1>
       <main className={styles.more}>
         <div>
           <h1>Find us on the interwebs!</h1>

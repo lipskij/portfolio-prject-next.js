@@ -184,6 +184,12 @@ a {
   font-size: 1rem;
 }
 
+.more-text {
+  padding-top: 5rem;
+  color: var(--text-color);
+  margin: 0;
+}
+
 .image-svg {
   margin-top: 5rem;
   width: 300px;
