@@ -208,6 +208,14 @@ a {
   min-width: 100%;
 }
 
+.box-trans {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-color);
+  min-width: 100%;
+}
+
 .container-text {
   font-size: 3rem;
 }
@@ -219,7 +227,7 @@ a {
 
 .text-white {
   font-weight: 600;
-  fill:#86D7E5;
+  fill: #86d7e5;
 }
 
 .home-btn {

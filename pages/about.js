@@ -5,7 +5,8 @@ import styles from "../styles/Home.module.css";
 import Head from "next/head";
 import Gallery from "../component/Gallery";
 import SliderImageData from "../component/SliderImageData";
-import ImageData from '../component/ImageData';
+import ImageData from "../component/ImageData";
+import PageTransition from "../component/PageTransition";
 
 // add next ant prev button on second gallery
 // add responsive css for mobile and tablet
@@ -17,10 +18,11 @@ const About = () => {
 
   return (
     <>
+      <PageTransition />
       <div className={styles.container}>
         <Head>
           <title>Front End App</title>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel='icon' href='/favicon.ico' />
         </Head>
         <Nav />
         <main className={styles.main}>
@@ -31,21 +33,21 @@ const About = () => {
           </p>
           {gallery ? (
             <div>
-              <button className="change-gal" onClick={() => setGallery(false)}>
+              <button className='change-gal' onClick={() => setGallery(false)}>
                 Grid
               </button>
               <Gallery slides={SliderImageData} />
             </div>
           ) : (
             <div>
-              <button className="change-gal" onClick={() => setGallery(true)}>
+              <button className='change-gal' onClick={() => setGallery(true)}>
                 Slider
               </button>
               <ImageData />
             </div>
           )}
         </main>
-        <div id="image-modal"></div>
+        <div id='image-modal'></div>
         <Footer />
       </div>
     </>
