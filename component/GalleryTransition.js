@@ -11,7 +11,7 @@ const blackBox = {
     height: 0,
     scale: 0,
     transition: {
-      duration: 2.5,
+      duration: 2,
       delay: 1,
       ease: [0.87, 0, 0.13, 1],
     },
@@ -56,7 +56,7 @@ const photoThree = {
     },
     animate: {
       opacity: 0,
-      x: 900,
+      y: -600,
       transition: {
         duration: 1,
         delay: 1,

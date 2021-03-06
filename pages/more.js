@@ -4,13 +4,16 @@ import Footer from "../component/Footer";
 import styles from "../styles/Home.module.css";
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import { FaGithubAlt } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { GrLinkedin } from "react-icons/gr";
-import Image from "next/image";
+import ContactsTransition from "../component/ContactsTransition";
 
 const More = () => {
   return (
+    <>
+    <ContactsTransition />
     <div className={styles.container}>
       <Head>
         <title>Front End App</title>
@@ -45,15 +48,16 @@ const More = () => {
             </Link>
           </p>
         </div>
-          <Image
-            src='/contacts.svg'
-            alt='Contacts picture'
-            width={400}
-            height={300}
-          />
+        <Image
+          src='/contacts.svg'
+          alt='Contacts picture'
+          width={400}
+          height={300}
+        />
       </main>
       <Footer />
     </div>
+    </>
   );
 };
 
