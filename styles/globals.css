@@ -240,8 +240,8 @@ a {
   height: 3rem;
 }
 .home-btn {
-  background: var(--button-color);
-  color: #eeebeb;
+  background: var(--nav-color);
+  color: var(--text-color);
   padding: 0.5rem;
   border: none;
   border-radius: 5px;
@@ -254,10 +254,10 @@ a {
   transform: scale(1.05);
   transition: 0.3s;
   box-shadow: 5px 5px 5px var(--nav-color);
-  background: var(--background-color);
+  background: #86d7e5;
   border: solid thin;
-  border-color: #2b8cec;
-  color: #2b8cec;
+  border-color: #1a1a1a;
+  color: #1a1a1a;
 }
 
 .contacts-svg {
