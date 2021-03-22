@@ -259,6 +259,18 @@ a {
   color: #2b8cec;
 }
 
+.contacts-svg {
+  background: #cfcfcf;
+  padding: 3rem;
+  border-radius: 10px;
+  border: outset thick;
+  border-color: #2b8cec;
+  box-shadow: 10px 5px 10px var(--nav-color);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
 @keyframes example {
   from {
     transform: translateX(-900px);

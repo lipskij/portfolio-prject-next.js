@@ -8,12 +8,10 @@ import Image from "next/image";
 import { FaGithubAlt } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { GrLinkedin } from "react-icons/gr";
-import ContactsTransition from "../component/ContactsTransition";
 
 const More = () => {
   return (
     <>
-      <ContactsTransition />
       <div className={styles.container}>
         <Head>
           <title>Front End App</title>
@@ -49,12 +47,14 @@ const More = () => {
               </Link>
             </p>
           </div>
-          <Image
-            src='/contacts.svg'
-            alt='Contacts picture'
-            width={400}
-            height={300}
-          />
+          <div className='contacts-svg'>
+            <Image
+              src='/contacts.svg'
+              alt='Contacts picture'
+              width={400}
+              height={300}
+            />
+          </div>
         </main>
         <Footer />
       </div>

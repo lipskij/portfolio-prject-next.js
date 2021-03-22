@@ -91,10 +91,9 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: center;
   column-gap: 2rem;
-  padding: 5rem 0;
   color: var(--text-color);
   width: 90vw;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 @keyframes example {
