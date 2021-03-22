@@ -195,7 +195,7 @@ a {
   width: 300px;
   height: 300px;
   animation: appear 0.3s ease-in;
-  animation-delay: 3.3s;
+  animation-delay: 5.3s;
   animation-fill-mode: forwards;
 }
 
@@ -234,6 +234,7 @@ a {
 .text-white {
   font-weight: 600;
   fill: #86d7e5;
+  width: 100%;
 }
 .button-space {
   height: 3rem;

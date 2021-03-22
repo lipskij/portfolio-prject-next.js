@@ -6,7 +6,7 @@ import Footer from "../component/Footer";
 import Link from "next/link";
 import ToggleTheme from "../component/ToggleTheme";
 import Logo from "../component/Logo";
-import InitialTransition from "../component/Welcome";
+import InitialTransition from "../component/InitialTransition";
 
 const Home = () => {
   return (
