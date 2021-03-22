@@ -18,6 +18,7 @@ const blackBox = {
 
 const InitialTransition = () => {
   return (
+  
     <motion.div
       className='box'
       initial='initial'

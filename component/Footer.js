@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <ul className='more-bottom'>
-        <li>Contact number +370 12 34 567</li>
+        <li>Contact number +370 00 00 000</li>
         <li>Visit www.link.com</li>
         <li>Terms and condisions</li>
       </ul>
@@ -16,7 +16,7 @@ const Footer = () => {
       </ul>
       <ul className='more-bottom'>
         <li>Help</li>
-        <li>FQA</li>
+        <li>FAQ</li>
         <li>Blog</li>
       </ul>
       <div className={styles.credit}>
