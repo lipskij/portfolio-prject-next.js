@@ -16,8 +16,8 @@ const Home = () => {
           <title>Front End App</title>
           <link rel='icon' href='/favicon.ico' />
         </Head>
-        <InitialTransition />
         <Nav />
+        <InitialTransition />
         <main className={styles.home}>
           <div className='toggle'>
             <ToggleTheme />
