@@ -50,20 +50,20 @@ const photoTwo = {
 };
 
 const photoThree = {
-    initial: {
-      opacity: 1,
-      width: "30%",
+  initial: {
+    opacity: 1,
+    width: "30%",
+  },
+  animate: {
+    opacity: 0,
+    y: -600,
+    transition: {
+      duration: 1,
+      delay: 1,
+      when: "afterChildren",
     },
-    animate: {
-      opacity: 0,
-      y: -600,
-      transition: {
-        duration: 1,
-        delay: 1,
-        when: "afterChildren",
-      },
-    },
-  };
+  },
+};
 
 const PageTransition = () => {
   return (

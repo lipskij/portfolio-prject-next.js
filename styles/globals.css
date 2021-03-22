@@ -235,7 +235,9 @@ a {
   font-weight: 600;
   fill: #86d7e5;
 }
-
+.button-space {
+  height: 3rem;
+}
 .home-btn {
   background: var(--button-color);
   color: #eeebeb;
@@ -251,7 +253,10 @@ a {
   transform: scale(1.05);
   transition: 0.3s;
   box-shadow: 5px 5px 5px var(--nav-color);
-  background: #3b69ff;
+  background: var(--background-color);
+  border: solid thin;
+  border-color: #2b8cec;
+  color: #2b8cec;
 }
 
 @keyframes example {
