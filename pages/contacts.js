@@ -31,7 +31,7 @@ const More = () => {
           <h1>Find us on the interwebs!</h1>
           <p className={moreTxt}>
             To find more projects{" "}
-            <Link href='https://github.com/lipskij'>
+            <Link rel="dns-prefetch" href='https://github.com/lipskij'>
               <a target='_blank'>
                 <FaGithubAlt className={gitLogo} size={35} alt='logo' />
               </a>
@@ -39,7 +39,7 @@ const More = () => {
           </p>
           <p className={moreTxt}>
             Write me an email
-            <Link href='mailto:emil.lipskij@gmail.com'>
+            <Link rel="dns-prefetch" href='mailto:emil.lipskij@gmail.com'>
               <a target='_blank'>
                 <HiOutlineMail className={mailLogo} size={35} alt='logo' />
               </a>
@@ -47,7 +47,7 @@ const More = () => {
           </p>
           <p className={moreTxt}>
             Or contact me on
-            <Link href='https://www.linkedin.com/in/emil-lipskij-6920831b2'>
+            <Link rel="dns-prefetch" href='https://www.linkedin.com/in/emil-lipskij-6920831b2'>
               <a target='_blank'>
                 <GrLinkedin className={fbLogo}size={30} alt='logo' />
               </a>
