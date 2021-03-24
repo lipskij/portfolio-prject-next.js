@@ -21,7 +21,7 @@ const Footer = () => {
         <li>Blog</li>
       </ul>
       <div className={styles.credit}>
-        <h5 className={styles.madeBy}>made by Emil Lipskij</h5>
+        <p className={styles.madeBy}>made by Emil Lipskij</p>
       </div>
     </footer>
   );
