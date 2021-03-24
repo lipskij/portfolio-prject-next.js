@@ -1,13 +1,14 @@
 import React, { useEffect, useState, useRef } from "react";
 import ReactDOM from "react-dom";
 import { FaRegWindowClose } from "react-icons/fa";
+import styles from '../styles/gallery.module.css';
 
 const OpenModal = ({ setIsOpen, url, isOpen, portalContainer }) => {
   return isOpen
     ? ReactDOM.createPortal(
         <div className="isOpen">
           <FaRegWindowClose
-            className="close-btn"
+            className={styles.closeBtn}
             onClick={() => setIsOpen(!isOpen)}
           />
           <style jsx>{`

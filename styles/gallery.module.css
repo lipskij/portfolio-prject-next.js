@@ -1,0 +1,100 @@
+.changeGal {
+  background: var(--button-color);
+  color: #eeebeb;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 4rem;
+  box-shadow: 5px 5px 5px var(--nav-color);
+  outline: none;
+  font-size: 1rem;
+  animation: pulse-dot 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
+}
+
+.closeBtn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 6rem;
+  bottom: 0;
+  color: var(--text-color);
+  transform: scale(3);
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.slider {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70vw;
+}
+.slider .buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+}
+.slider .btnNext {
+  left: 0;
+  filter: drop-shadow(3px 5px 1px var(--nav-color));
+  color: var(--button-color);
+}
+.slider .btnPrev {
+  right: 0;
+  filter: drop-shadow(3px 5px 1px var(--nav-color));
+  color: var(--button-color);
+}
+
+.btnPrev:hover,
+.btnNext:hover {
+  cursor: pointer;
+  transition-duration: 0.3s;
+  color: #6699cc;
+}
+
+.image {
+  width: 500px;
+  height: 350px;
+  padding-bottom: 1rem;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 480px) {
+  .gitLogo,
+  .maillogo,
+  .fbLogo {
+    color: var(--text-color);
+    cursor: pointer;
+    margin-left: 6rem;
+    filter: drop-shadow(3px 5px 1px var(--nav-color));
+    transition-duration: 0.3s;
+  }
+  .mailLogo {
+    margin-left: 7.7rem;
+  }
+  .fbLogo {
+    margin-left: 8.1rem;
+  }
+  .slider {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding-top: 1rem;
+  }
+  .slider .buttons {
+    z-index: 2;
+    padding-top: 6rem;
+    justify-content: space-around;
+  }
+}

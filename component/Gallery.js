@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BiLeftArrow, BiRightArrow } from 'react-icons/bi';
 import Image from 'next/image';
 import SliderImageData from './SliderImageData';
+import styles from '../styles/gallery.module.css';
 
 const Gallery = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -20,10 +21,10 @@ const Gallery = ({ slides }) => {
   }
 
   return (
-    <section className="slider">
-      <div className="buttons">
-        <BiLeftArrow className="btn-prev" onClick={prevSlide} size={30}/>
-        <BiRightArrow className="btn-next" onClick={nextSlide} size={30}/>
+    <section className={styles.slider}>
+      <div className={styles.buttons}>
+        <BiLeftArrow className={styles.btnPrev} onClick={prevSlide} size={30}/>
+        <BiRightArrow className={styles.btnNext} onClick={nextSlide} size={30}/>
       </div>
       {SliderImageData.map((slide, index) => {
         return (
@@ -33,7 +34,7 @@ const Gallery = ({ slides }) => {
           >
             {index === current && (
               <Image
-                className="image"
+                className={styles.image}
                 src={slide.imageUrl}
                 key={index}
                 alt="bikes"

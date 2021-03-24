@@ -1,0 +1,98 @@
+.moreTxt {
+  display: flex;
+  align-items: center;
+  animation-name: example;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.49, 0.02, 0.22, 1.27);
+  margin: 0;
+}
+
+.gitLogo,
+.mailLogo,
+.fbLogo {
+  color: var(--text-color);
+  cursor: pointer;
+  margin-left: 6.2rem;
+  margin-top: 1rem;
+  filter: drop-shadow(3px 5px 1px var(--nav-color));
+  transition-duration: 0.3s;
+}
+.gitLogo:hover,
+.mailLogo:hover,
+.fbLogo:hover {
+  transform: scale(1.15);
+  color: #00b0ff;
+}
+
+.mailLogo {
+  margin-left: 7.7rem;
+}
+.fbLogo {
+  margin-left: 8rem;
+}
+
+.moreBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 2;
+  padding: 5rem 0 2rem 0;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.moreText {
+  padding-top: 5rem;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.contactsSvg {
+  background: #ffffff;
+  padding: 3rem;
+  border-radius: 10px;
+  border: outset thick;
+  border-color: #2b8cec;
+  box-shadow: 10px 5px 10px var(--nav-color);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 60vh;
+}
+
+.moreBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 2;
+  padding: 2rem 0 2rem 0;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .moreBottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 2;
+    padding: 2rem 0 2rem 0;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .contactsSvg {
+    padding: 1rem;
+    width: 300px;
+    height: 200px;
+    margin-top: 2rem;
+  }
+  .moreTxt {
+    text-align: left;
+  }
+  .moreTxt a {
+    width: 1rem;
+  }
+}

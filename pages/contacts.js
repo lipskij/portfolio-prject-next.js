@@ -7,7 +7,15 @@ import Link from "next/link";
 import { FaGithubAlt } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { GrLinkedin } from "react-icons/gr";
-import ContactsSvg from "../component/ContactsSvg";
+import ContactsSvg from '../component/ContactsSvg';
+import {
+  moreText,
+  moreTxt,
+  gitLogo,
+  fbLogo,
+  mailLogo,
+  contactsSvg,
+} from "../styles/contacts.module.css";
 
 const More = () => {
   return (
@@ -17,36 +25,36 @@ const More = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Nav />
-      <h1 className='more-text'>Contact Us!</h1>
+      <h1 className={moreText}>Contact Us!</h1>
       <main className={styles.more}>
         <div>
           <h1>Find us on the interwebs!</h1>
-          <p className='more-txt'>
+          <p className={moreTxt}>
             To find more projects{" "}
             <Link href='https://github.com/lipskij'>
               <a target='_blank'>
-                <FaGithubAlt className='git-logo' size={35} alt='logo' />
+                <FaGithubAlt className={gitLogo} size={35} alt='logo' />
               </a>
             </Link>
           </p>
-          <p className='more-txt'>
+          <p className={moreTxt}>
             Write me an email
             <Link href='mailto:emil.lipskij@gmail.com'>
               <a target='_blank'>
-                <HiOutlineMail className='mail-logo' size={35} alt='logo' />
+                <HiOutlineMail className={mailLogo} size={35} alt='logo' />
               </a>
             </Link>
           </p>
-          <p className='more-txt'>
+          <p className={moreTxt}>
             Or contact me on
             <Link href='https://www.linkedin.com/in/emil-lipskij-6920831b2'>
               <a target='_blank'>
-                <GrLinkedin className='fb-logo' size={30} alt='logo' />
+                <GrLinkedin className={fbLogo}size={30} alt='logo' />
               </a>
             </Link>
           </p>
         </div>
-        <div className='contacts-svg'>
+        <div className={contactsSvg}>
           <ContactsSvg />
         </div>
       </main>

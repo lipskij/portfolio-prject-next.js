@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Nav from "../component/Nav";
 import Footer from "../component/Footer";
 import styles from "../styles/Home.module.css";
+import {btnNext, btnPrev} from '../styles/gallery.module.css';
+import {changeGal} from "../styles/gallery.module.css";
 import Head from "next/head";
 import Gallery from "../component/Gallery";
 import SliderImageData from "../component/SliderImageData";
@@ -28,14 +30,14 @@ const About = () => {
           </p>
           {gallery ? (
             <div>
-              <button className='change-gal' onClick={() => setGallery(false)}>
+              <button className={changeGal} onClick={() => setGallery(false)}>
                 Grid
               </button>
               <Gallery slides={SliderImageData} />
             </div>
           ) : (
             <div>
-              <button className='change-gal' onClick={() => setGallery(true)}>
+              <button className={changeGal} onClick={() => setGallery(true)}>
                 Slider
               </button>
               <ImageData />
