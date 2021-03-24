@@ -37,8 +37,8 @@ const Gallery = ({ slides }) => {
                 src={slide.imageUrl}
                 key={index}
                 alt="bikes"
-                width={500}
-                height={300}
+                width={800}
+                height={500}
               />
             )}
           </div>

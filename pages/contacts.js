@@ -8,6 +8,7 @@ import Image from "next/image";
 import { FaGithubAlt } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { GrLinkedin } from "react-icons/gr";
+import ContactsSvg from '../component/ContactsSvg';
 
 const More = () => {
   return (
@@ -48,12 +49,13 @@ const More = () => {
             </p>
           </div>
           <div className='contacts-svg'>
-            <Image
+            <ContactsSvg />
+            {/* <Image
               src='/contacts.svg'
               alt='Contacts picture'
               width={400}
               height={300}
-            />
+            /> */}
           </div>
         </main>
         <Footer />

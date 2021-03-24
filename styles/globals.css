@@ -77,14 +77,14 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 550px;
+  width: 70vw;
 }
 .slider .buttons {
   display: flex;
   justify-content: space-between;
   width: 100%;
   position: absolute;
-  top: 150px;
+  top: 50%;
 }
 .slider .btn-next {
   left: 0;
@@ -261,7 +261,7 @@ a {
 }
 
 .contacts-svg {
-  background: #cfcfcf;
+  background: #ffffff;
   padding: 3rem;
   border-radius: 10px;
   border: outset thick;
@@ -270,6 +270,7 @@ a {
   align-items: center;
   justify-content: center;
   display: flex;
+  height: 60vh;
 }
 
 @keyframes example {
