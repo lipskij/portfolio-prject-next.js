@@ -24,39 +24,39 @@ const Nav = () => {
         onClick={() => setIsOpen(!isOpen)}
       />
       <Drawer className={hamburgerClassName} isOpen={isOpen}>
+        <p className='logo'>{`< generic logo />`}</p>
         <ul onClick={() => setIsOpen(!isOpen)}>
-          <p className="logo">{`< generic logo />`}</p>
           <li>
-            <Link passHref="/">
+            <Link passHref='/'>
               <a>Home</a>
             </Link>
           </li>
           <li>
-            <Link passHref="/gallery">
+            <Link passHref='/gallery'>
               <a>Gallery</a>
             </Link>
           </li>
           <li>
-            <Link passHref="/contacts">
+            <Link passHref='/contacts'>
               <a>Contacts</a>
             </Link>
           </li>
         </ul>
       </Drawer>
-      <ul className="desctop-ul">
-        <p className="logo">{`< generic logo />`}</p>
+      <ul className='desctop-ul'>
+        <p className='logo'>{`< generic logo />`}</p>
         <li>
-          <Link passHref="/">
+          <Link passHref='/'>
             <a>Home</a>
           </Link>
         </li>
         <li>
-          <Link passHref="/gallery">
+          <Link passHref='/gallery'>
             <a>Gallery</a>
           </Link>
         </li>
         <li>
-          <Link passHref="/contacts">
+          <Link passHref='/contacts'>
             <a>Contacts</a>
           </Link>
         </li>
