@@ -11,7 +11,7 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head />
         <body>
-          <script
+          <script rel="preload"
             dangerouslySetInnerHTML={{
               __html: `(function () {
                 function setTheme(newTheme) {
