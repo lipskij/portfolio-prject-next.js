@@ -142,9 +142,12 @@
   }
   .more {
     display: flex;
-    width: 95vw;
+    width: 80vw;
     flex-direction: column;
     line-height: 2;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
   }
   .footer {
     display: flex;
@@ -152,5 +155,8 @@
     align-items: center;
     width: 95vw;
     line-height: 2;
+  }
+  .container h1 {
+    font-size: 1.5rem;
   }
 }

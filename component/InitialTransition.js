@@ -16,7 +16,7 @@ const blackBox = {
   },
 };
 // this breaks the mobile view
-// TODO: fix mobile view
+// TODO: fix mobile view: DONE
 // TODO: fix css modules
 
 const InitialTransition = () => {

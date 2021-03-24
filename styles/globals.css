@@ -159,7 +159,7 @@ a {
 .fb-logo {
   color: var(--text-color);
   cursor: pointer;
-  margin-left: 5rem;
+  margin-left: 9.2rem;
   margin-top: 1rem;
   filter: drop-shadow(3px 5px 1px var(--nav-color));
   transition-duration: 0.3s;
@@ -361,7 +361,7 @@ a {
   .fb-logo {
     color: var(--text-color);
     cursor: pointer;
-    margin-left: 2rem;
+    margin-left: 6rem;
     filter: drop-shadow(3px 5px 1px var(--nav-color));
     transition-duration: 0.3s;
   }
@@ -394,5 +394,14 @@ a {
     padding: 2rem 0 2rem 0;
     cursor: pointer;
     font-size: 1rem;
+  }
+  .contacts-svg {
+    padding: 1rem;
+    width: 300px;
+    height: 200px;
+    margin-top: 2rem;
+  }
+  .box {
+    width: 300px;
   }
 }
