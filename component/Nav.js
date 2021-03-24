@@ -27,17 +27,17 @@ const Nav = () => {
         <p className='logo'>{`< generic logo />`}</p>
         <ul onClick={() => setIsOpen(!isOpen)}>
           <li>
-            <Link passHref='/'>
+            <Link href='/'>
               <a>Home</a>
             </Link>
           </li>
           <li>
-            <Link passHref='/gallery'>
+            <Link href='/gallery'>
               <a>Gallery</a>
             </Link>
           </li>
           <li>
-            <Link passHref='/contacts'>
+            <Link href='/contacts'>
               <a>Contacts</a>
             </Link>
           </li>
@@ -46,17 +46,17 @@ const Nav = () => {
       <ul className='desctop-ul'>
         <p className='logo'>{`< generic logo />`}</p>
         <li>
-          <Link passHref='/'>
+          <Link href='/'>
             <a>Home</a>
           </Link>
         </li>
         <li>
-          <Link passHref='/gallery'>
+          <Link href='/gallery'>
             <a>Gallery</a>
           </Link>
         </li>
         <li>
-          <Link passHref='/contacts'>
+          <Link href='/contacts'>
             <a>Contacts</a>
           </Link>
         </li>
