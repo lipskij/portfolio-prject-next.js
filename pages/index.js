@@ -14,6 +14,7 @@ const Home = () => {
       <Head>
         <title>Front End App</title>
         <link rel="preload" rel='icon' href='/favicon.ico' />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Nav />
       <InitialTransition />
