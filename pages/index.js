@@ -27,7 +27,7 @@ const Home = () => {
             <h1>Brightest ideas for YOUR Brand!</h1>
             <div className='button-space'>
               <button className='home-btn'>
-                <Link href='/more'>
+                <Link rel="preload" href='/more'>
                   <a>Contact Us!</a>
                 </Link>
               </button>
@@ -38,7 +38,7 @@ const Home = () => {
             <p>Possibility to toggle between light and dark mode</p>
             <p>
               User can switch to single page mode{" "}
-              <Link href='/single'>
+              <Link rel="preload" href='/single'>
                 <a className={styles.single}>Here</a>
               </Link>
             </p>
