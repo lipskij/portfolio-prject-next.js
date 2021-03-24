@@ -38,9 +38,9 @@ const Home = () => {
           <p>I'll be ading a text that user can unfold to read more.</p>
           <p>Possibility to toggle between light and dark mode</p>
           <p>
-            User can switch to single page mode{" "}
+            User can switch to single page {" "}
             <Link rel="preload" href='/single'>
-              <a className={styles.single}>Here</a>
+              <a className={styles.single}>Mode</a>
             </Link>
           </p>
         </div>
