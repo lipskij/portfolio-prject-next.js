@@ -10,43 +10,41 @@ import InitialTransition from "../component/InitialTransition";
 
 const Home = () => {
   return (
-    <>
-      <div className={styles.container}>
-        <Head>
-          <title>Front End App</title>
-          <link rel='icon' href='/favicon.ico' />
-        </Head>
-        <Nav />
-        <InitialTransition />
-        <main className={styles.home}>
-          <div className='toggle'>
-            <ToggleTheme />
-          </div>
-          <Logo />
-          <div className={styles.text}>
-            <h1>Brightest ideas for YOUR Brand!</h1>
-            <div className='button-space'>
-              <button className='home-btn'>
-                <Link rel="preload" href='/more'>
-                  <a>Contact Us!</a>
-                </Link>
-              </button>
-            </div>
-            <p>This page is for my portfolio.</p>
-            <p>It is made using React and Nextjs and Framer Motion.</p>
-            <p>I'll be ading a text that user can unfold to read more.</p>
-            <p>Possibility to toggle between light and dark mode</p>
-            <p>
-              User can switch to single page mode{" "}
-              <Link rel="preload" href='/single'>
-                <a className={styles.single}>Here</a>
+    <div className={styles.container}>
+      <Head>
+        <title>Front End App</title>
+        <link rel="preconnect" rel='icon' href='/favicon.ico' />
+      </Head>
+      <Nav />
+      <InitialTransition />
+      <main className={styles.home}>
+        <div className='toggle'>
+          <ToggleTheme />
+        </div>
+        <Logo />
+        <div className={styles.text}>
+          <h1>Brightest ideas for YOUR Brand!</h1>
+          <div className='button-space'>
+            <button className='home-btn'>
+              <Link rel="preconnect" href='/more'>
+                <a>Contact Us!</a>
               </Link>
-            </p>
+            </button>
           </div>
-        </main>
-        <Footer />
-      </div>
-    </>
+          <p>This page is for my portfolio.</p>
+          <p>It is made using React and Nextjs and Framer Motion.</p>
+          <p>I'll be ading a text that user can unfold to read more.</p>
+          <p>Possibility to toggle between light and dark mode</p>
+          <p>
+            User can switch to single page mode{" "}
+            <Link rel="preconnect" href='/single'>
+              <a className={styles.single}>Here</a>
+            </Link>
+          </p>
+        </div>
+      </main>
+      <Footer />
+    </div>
   );
 };
 
