@@ -160,10 +160,15 @@ a {
   color: var(--text-color);
   cursor: pointer;
   margin-left: 5rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   filter: drop-shadow(3px 5px 1px var(--nav-color));
   transition-duration: 0.3s;
-  animation: jump 2s infinite;
+}
+.git-logo:hover,
+.mail-logo:hover,
+.fb-logo:hover {
+  transform: scale(1.15);
+  color:#00B0FF
 }
 
 .mail-logo {
@@ -291,18 +296,6 @@ a {
   }
   100% {
     transform: scale(1);
-  }
-}
-
-@keyframes jump {
-  0% {
-    transform: translate(-50%, -50%) scale(1.25, 0.8);
-  }
-  50% {
-    transform: translate(-50%, -150%) scale(1, 1);
-  }
-  100% {
-    transform: translate(-50%, -50%) scale(1.25, 0.8);
   }
 }
 
