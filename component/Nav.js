@@ -38,7 +38,7 @@ const Nav = () => {
           </li>
           <li>
             <Link href="/contacts">
-              <a>More</a>
+              <a>Contacts</a>
             </Link>
           </li>
         </ul>
@@ -57,7 +57,7 @@ const Nav = () => {
         </li>
         <li>
           <Link href="/contacts">
-            <a>More</a>
+            <a>Contacts</a>
           </Link>
         </li>
       </ul>
