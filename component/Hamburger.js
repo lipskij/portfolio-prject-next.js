@@ -2,7 +2,7 @@ import React from "react";
 
 const Hamburger = ({ onClick, toggled, className = "" }) => {
   return (
-    <button className={`root ${className}`} onClick={onClick}>
+    <button aria-label="navigation" className={`root ${className}`} onClick={onClick}>
       <style jsx>{`
         .root {
           border: none;
