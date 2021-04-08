@@ -9,7 +9,7 @@
   box-shadow: 5px 5px 5px var(--nav-color);
   outline: none;
   font-size: 1rem;
-  animation: pulse-dot 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
+  margin: 1.3rem;
 }
 
 .closeBtn {
@@ -38,7 +38,7 @@
 .slider .buttons {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 75vw;
   position: absolute;
   top: 50%;
 }

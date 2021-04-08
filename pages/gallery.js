@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import Nav from "../component/Nav";
 import Footer from "../component/Footer";
 import styles from "../styles/Home.module.css";
-import {btnNext, btnPrev} from '../styles/gallery.module.css';
-import {changeGal} from "../styles/gallery.module.css";
+import { changeGal } from "../styles/gallery.module.css";
 import Head from "next/head";
 import Gallery from "../component/Gallery";
 import SliderImageData from "../component/SliderImageData";
@@ -14,40 +13,38 @@ const About = () => {
   const [gallery, setGallery] = useState(false);
 
   return (
-    <>
+    <div className={styles.container}>
+      <Head>
+        <title>Front End App</title>
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
+      <Nav />
       <PageTransition />
-      <div className={styles.container}>
-        <Head>
-          <title>Front End App</title>
-          <link rel='icon' href='/favicon.ico' />
-        </Head>
-        <Nav />
-        <main className={styles.main}>
-          <h1>This is Gallery</h1>
-          <p>
-            A small gallery of pictures made with{" "}
-            {gallery ? "slider" : "CSS grid"}
-          </p>
-          {gallery ? (
-            <div>
-              <button className={changeGal} onClick={() => setGallery(false)}>
-                Grid
-              </button>
-              <Gallery slides={SliderImageData} />
-            </div>
-          ) : (
-            <div>
-              <button className={changeGal} onClick={() => setGallery(true)}>
-                Slider
-              </button>
-              <ImageData />
-            </div>
-          )}
-        </main>
-        <div id='image-modal'></div>
-        <Footer />
-      </div>
-    </>
+      <main className={styles.main}>
+        <h1>This is Gallery</h1>
+        <p>
+          Small gallery {" "}
+          {gallery ? "slider" : "CSS grid"}
+        </p>
+        {gallery ? (
+          <div>
+            <button className={changeGal} onClick={() => setGallery(false)}>
+              Grid
+            </button>
+            <Gallery slides={SliderImageData} />
+          </div>
+        ) : (
+          <div>
+            <button className={changeGal} onClick={() => setGallery(true)}>
+              Slider
+            </button>
+            <ImageData />
+          </div>
+        )}
+      </main>
+      <div id='image-modal'></div>
+      <Footer />
+    </div>
   );
 };
 

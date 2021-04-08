@@ -73,9 +73,9 @@ const PageTransition = () => {
       animate='animate'
       variants={blackBox}
     >
-      <motion.img src='/bike-img1.jpg' alt='bike' variants={photoOne} />
-      <motion.img src='/bike-img2.jpg' alt='bike' variants={photoTwo} />
-      <motion.img src='/bike-img4.jpg' alt='bike' variants={photoThree} />
+      <motion.img src='/bike-img1-min.png' alt='bike' variants={photoOne} />
+      <motion.img src='/bike-img2-min.png' alt='bike' variants={photoTwo} />
+      <motion.img src='/bike-img4-min.png' alt='bike' variants={photoThree} />
     </motion.div>
   );
 };
