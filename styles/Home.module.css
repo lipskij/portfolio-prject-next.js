@@ -28,21 +28,6 @@
   margin-bottom: 100px;
 }
 
-.credit {
-  width: 100%;
-  height: 4rem;
-  color: var(--text-color);
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 3;
-}
-
-.madeBy {
-  display: flex;
-  width: 90vw;
-  justify-content: center;
-}
-
 .title {
   margin: 0;
   line-height: 1.15;
@@ -77,13 +62,6 @@
   width: 40vw;
   animation-name: example;
   animation-duration: 1s;
-}
-
-.footer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 95vw;
-  line-height: 2;
 }
 
 .more {
@@ -139,23 +117,14 @@
     color: var(--text-color);
     width: 90vw;
   }
-  .more {
-    display: flex;
-    width: 80vw;
-    flex-direction: column;
-    line-height: 2;
-    align-items: center;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 95vw;
-    line-height: 2;
-  }
   .container h1 {
     font-size: 1.5rem;
+  }
+  .more {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    align-items: center;
+    text-align: center;
   }
 }

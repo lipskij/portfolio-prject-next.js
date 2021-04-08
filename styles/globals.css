@@ -134,7 +134,40 @@ a {
   color: #1a1a1a;
 }
 
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 90vw;
+  line-height: 2;
+}
 
+.moreBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 2;
+  padding: 5rem 0 2rem 0;
+  font-size: 1rem;
+}
+
+.moreBottom li:hover {
+  cursor: pointer;
+}
+
+.credit {
+  width: 100%;
+  height: 4rem;
+  color: var(--text-color);
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.madeBy {
+  display: flex;
+  width: 90vw;
+  justify-content: center;
+}
 
 @keyframes example {
   from {
@@ -216,5 +249,20 @@ a {
   }
   .box {
     width: 300px;
+  }
+  .moreBottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 2;
+    padding: 2rem 0 2rem 0;
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
   }
 }
