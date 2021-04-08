@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../styles/Home.module.css";
-import {moreBottom} from '../styles/contacts.module.css';
+import { moreBottom } from "../styles/contacts.module.css";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -21,7 +22,13 @@ const Footer = () => {
         <li>Blog</li>
       </ul>
       <div className={styles.credit}>
-        <p className={styles.madeBy}>made by Emil Lipskij</p>
+        <p className={styles.madeBy}>
+          <Link rel='noreferre' href='https://lipskij.xyz/'>
+            <a target='_balnk'>
+              <i>Made by Emil Lipskij</i>
+            </a>
+          </Link>
+        </p>
       </div>
     </footer>
   );
