@@ -8,7 +8,7 @@ const Hamburger = ({ onClick, toggled, className = "" }) => {
           border: none;
           background: none;
           position: relative;
-          padding: 10px 2px 2px 2px;
+          padding: 5px 2px 2px 2px;
           min-width: 40px;
           min-height: 40px;
           margin-left: 1rem;

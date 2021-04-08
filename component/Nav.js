@@ -43,8 +43,8 @@ const Nav = () => {
           </li>
         </ul>
       </Drawer>
+      <p className='logo'>{`< generic logo />`}</p>
       <ul className='desctop-ul'>
-        <p className='logo'>{`< generic logo />`}</p>
         <li>
           <Link href='/'>
             <a>Home</a>
