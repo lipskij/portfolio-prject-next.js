@@ -16,6 +16,9 @@ const Drawer = ({ children, isOpen, className = "" }) => {
           transform: translateY(-100%);
           transition: transform 300ms;
           z-index: -1;
+          align-items: center;
+          display: flex;
+          justify-content: space-around;
         }
         .isOpen {
           transform: translateY(0);

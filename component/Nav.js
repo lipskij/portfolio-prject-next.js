@@ -24,7 +24,7 @@ const Nav = () => {
         onClick={() => setIsOpen(!isOpen)}
       />
       <Drawer className={hamburgerClassName} isOpen={isOpen}>
-        <p className='logo'>{`< generic logo />`}</p>
+        {/* <p className='logo'>{`< generic logo />`}</p> */}
         <ul onClick={() => setIsOpen(!isOpen)}>
           <li>
             <Link href='/'>

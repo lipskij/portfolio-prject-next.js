@@ -14,10 +14,13 @@ const Hamburger = ({ onClick, toggled, className = "" }) => {
           margin-left: 1rem;
         }
         .bar {
-          background-color: #6699cc;
+          background-color: #3b9dff;
           min-height: 2px;
           min-width: 20px;
           transition: transform 300ms;
+          outline: none;
+        }
+        .root:focus {
           outline: none;
         }
         .bar ~ .bar {
