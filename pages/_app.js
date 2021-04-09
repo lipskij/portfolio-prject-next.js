@@ -18,14 +18,14 @@ function MyApp({ Component, pageProps, router }) {
             pageAnimate: {
               opacity: 1,
               transition: {
-                duration: 0.3,
+                duration: 0.2,
               },
             },
             pageExit: {
               backgroundColor: "#3d3d43",
               opacity: 0,
               transition: {
-                duration: 0.3,
+                duration: 0.2,
               },
             },
           }}

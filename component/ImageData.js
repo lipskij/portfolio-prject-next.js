@@ -38,6 +38,7 @@ function Gal() {
           column-count: 3;
           column-gap: 0px;
           padding: 0 5rem 0 5rem;
+          
         }
         @media screen and (max-width: 480px) {
           .try {

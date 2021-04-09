@@ -15,6 +15,7 @@ const OpenModal = ({ setIsOpen, url, isOpen, portalContainer }) => {
             .gallery {
               margin: 0 auto;
               display: flex;
+              
             }
             .isOpen {
               display: flex;
