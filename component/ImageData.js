@@ -34,11 +34,9 @@ function Gal() {
       <style jsx>{`
         .try {
           transform: scale(1);
-          line-height: 2;
+          line-height: 5;
           column-count: 3;
-          column-gap: 0px;
           padding: 0 5rem 0 5rem;
-          
         }
         @media screen and (max-width: 480px) {
           .try {

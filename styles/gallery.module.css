@@ -1,17 +1,3 @@
-.changeGal {
-  background: var(--button-color);
-  color: #eeebeb;
-  padding: 0.5rem;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  width: 4rem;
-  box-shadow: 5px 5px 5px var(--nav-color);
-  outline: none;
-  font-size: 1rem;
-  margin: 1.3rem;
-}
-
 .closeBtn {
   display: flex;
   align-items: flex-start;
@@ -67,7 +53,6 @@
   width: 500px;
   height: 350px;
   padding-bottom: 1rem;
-  border-radius: 5px;
 }
 
 @media screen and (max-width: 480px) {

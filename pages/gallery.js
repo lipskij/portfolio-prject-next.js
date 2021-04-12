@@ -8,7 +8,6 @@ import SliderImageData from "../component/SliderImageData";
 import ImageData from "../component/ImageData";
 
 const About = () => {
-
   return (
     <div className={styles.container}>
       <Head>
@@ -18,9 +17,6 @@ const About = () => {
       <Nav />
       <main className={styles.main}>
         <h1>Gallery</h1>
-        <div>
-          <p>some stuff</p>
-        </div>
         <div>
           <ImageData />
         </div>

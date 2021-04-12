@@ -98,7 +98,6 @@ const Item = ({ url }) => {
       <style jsx>{`
         .gallery {
           margin: 0;
-          padding-top: 1rem;
         }
         .gallery img {
           width: 95%;
