@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import useIntro from "../component/TransitionHook";
 
 const blackBox = {
   initial: {
@@ -17,12 +18,12 @@ const blackBox = {
 };
 
 const InitialTransition = () => {
+  const showAnimation = useIntro();
   return (
-  
     <motion.div
       className='box'
       initial='initial'
-      animate='animate'
+      animate={showAnimation ? "animate" : { opacity: 0, height: 0 }}
       variants={blackBox}
     >
       <motion.svg

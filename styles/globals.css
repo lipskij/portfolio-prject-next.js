@@ -76,7 +76,16 @@ a {
   transform: scale(0.95);
 }
 
-.image-svg {
+.image-svg-loading {
+  margin-top: 5rem;
+  width: 300px;
+  height: 300px;
+  animation: appear 0.3s ease-in;
+  /* animation-delay: 5.3s; */
+  animation-fill-mode: forwards;
+}
+
+.image-svg-loaded {
   margin-top: 5rem;
   width: 300px;
   height: 300px;
@@ -85,7 +94,14 @@ a {
   animation-fill-mode: forwards;
 }
 
-.pulse-svg {
+.pulse-svg-loading {
+  width: 300px;
+  height: 300px;
+  animation: pulse-dot 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
+  /* animation-delay: 5s; */
+}
+
+.pulse-svg-loaded {
   width: 300px;
   height: 300px;
   animation: pulse-dot 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
