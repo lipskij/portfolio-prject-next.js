@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 
+// error about server and cient classname not matching
+
 const useIntro = () => {
   if (typeof window !== "undefined") {
-    const storage = window.localStorage;
+    const storage = window.sessionStorage;
     const currTimestamp = Date.now();
     const timestamp = JSON.parse(storage.getItem("timestamp") || "1000");
 
