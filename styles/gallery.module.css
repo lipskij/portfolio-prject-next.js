@@ -1,16 +1,15 @@
 .closeBtn {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
   position: fixed;
+  width: 100vw;
   left: 0;
   right: 0;
-  top: 6rem;
+  top: 9.5%;
   bottom: 0;
   color: var(--text-color);
   transform: scale(3);
   cursor: pointer;
-  margin-left: 50px;
+  margin-left: 150px;
 }
 
 .slider {
@@ -81,8 +80,8 @@
     padding-top: 1rem;
   }
   .slider .buttons {
-    z-index: 2;
-    padding-top: 6rem;
-    justify-content: space-around;
+    /* z-index: 2; */
+    padding-top: 10rem;
+    justify-content: space-between;
   }
 }
