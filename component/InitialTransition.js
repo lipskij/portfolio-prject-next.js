@@ -23,7 +23,7 @@ const InitialTransition = () => {
     <motion.div
       className='box'
       initial='initial'
-      animate={showAnimation ? "animate" : { opacity: 0, height: 0 }}
+      animate={showAnimation ? "animate" : { display: 'none' }}
       variants={blackBox}
     >
       <motion.svg
