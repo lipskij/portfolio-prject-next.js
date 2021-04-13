@@ -6,8 +6,8 @@ const Logo = () => {
   const showAnimation = useIntro();
   
   return (
-    <div className={showAnimation ? 'pulse-svg-loaded' : 'pulse-svg-loading'}>
-      <div className={showAnimation ? 'image-svg-loaded' : 'image-svg-loading'}>
+    <div className='pulse-svg-loadOne'>
+      <div className='image-svg-loadOne'>
         <motion.svg
           width='300'
           height='301'
