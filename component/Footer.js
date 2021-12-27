@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { FaGithubAlt } from "react-icons/fa";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -20,14 +21,28 @@ const Footer = () => {
         <li>FAQ</li>
         <li>Blog</li>
       </ul>
-      <div className='credit'>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-evenly",
+          alignContent: "center",
+          width: "20vw",
+          margin: "0 auto",
+        }}
+        className='credit'
+      >
         <p className='madeBy'>
           <Link rel='noreferre' href='https://lipskij.xyz/'>
             <a target='_balnk'>
-              <i>Made by Emil Lipskij {year}</i>
+              <i> {year} Made by Emil Lipskij </i>
             </a>
           </Link>
         </p>
+        <Link rel='dns-prefetch' href='https://github.com/lipskij'>
+          <a target='_blank'>
+            <FaGithubAlt style={{ margin: "1rem 0" }} size={35} alt='logo' />
+          </a>
+        </Link>
       </div>
     </footer>
   );
