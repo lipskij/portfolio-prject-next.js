@@ -136,6 +136,7 @@ const Item = ({ url }) => {
               className='img'
               alt='Image'
               onClick={() => setIsOpen(!isOpen)}
+              loading='lazy'
             />
           </button>
         </figure>
