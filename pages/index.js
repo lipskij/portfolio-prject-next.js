@@ -12,11 +12,13 @@ const Home = () => {
   return (
     <div className={styles.container}>
       <Head>
+        <link rel='preload' rel='icon' href='/favicon.ico' />
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <meta
+          name='description'
+          content='Nextjs front end project for page transitions'
+        />
         <title>Front End App</title>
-        <link rel="preload" rel='icon' href='/favicon.ico' />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="Nextjs front end project for page transitions" />
-        
       </Head>
       <Nav />
       <InitialTransition />
@@ -29,7 +31,7 @@ const Home = () => {
           <h1>Brightest ideas for YOUR Brand!</h1>
           <div className='button-space'>
             <button className='home-btn'>
-              <Link rel="preload" href='/more'>
+              <Link rel='preload' href='/more'>
                 <a>Contact Us!</a>
               </Link>
             </button>
@@ -39,8 +41,8 @@ const Home = () => {
           <p>I'll be ading a text that user can unfold to read more.</p>
           <p>Possibility to toggle between light and dark mode</p>
           <p>
-            User can switch to single page {" "}
-            <Link rel="preload" href='/single'>
+            User can switch to single page{" "}
+            <Link rel='preload' href='/single'>
               <a className={styles.single}>Mode</a>
             </Link>
           </p>

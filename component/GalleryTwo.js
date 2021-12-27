@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { FaRegWindowClose } from "react-icons/fa";
 import styles from "../styles/gallery.module.css";
 
-const OpenModal = ({ setIsOpen, url, isOpen, portalContainer }) => {
+const OpenModal = ({ setIsOpen, url, urlWebp, isOpen, portalContainer }) => {
   return isOpen
     ? ReactDOM.createPortal(
         <div className='isOpen'>
@@ -68,12 +68,15 @@ const OpenModal = ({ setIsOpen, url, isOpen, portalContainer }) => {
           <div className='gallery'>
             <figure className='gallery-image'>
               <button className='img-btn'>
-                <img
-                  src={url}
-                  className='img'
-                  alt='Image'
-                  onClick={() => setIsOpen(!isOpen)}
-                />
+                <picture>
+                  <source srcSet={url} />
+                  <img
+                    src={urlWebp}
+                    className='img'
+                    alt='Image'
+                    onClick={() => setIsOpen(!isOpen)}
+                  />
+                </picture>
               </button>
             </figure>
           </div>
@@ -83,7 +86,7 @@ const OpenModal = ({ setIsOpen, url, isOpen, portalContainer }) => {
     : null;
 };
 
-const Item = ({ url }) => {
+const Item = ({ url, urlWebp }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const portalContainer = useRef(null);
@@ -143,13 +146,15 @@ const Item = ({ url }) => {
       <div className='gallery'>
         <figure className='gallery-image'>
           <button className='img-btn'>
-            <img
-              src={url}
-              className='img'
-              alt='Image'
-              onClick={() => setIsOpen(!isOpen)}
-              loading='lazy'
-            />
+            <picture>
+              <source srcSet={url} />
+              <img
+                src={urlWebp}
+                className='img'
+                alt='Image'
+                onClick={() => setIsOpen(!isOpen)}
+              />
+            </picture>
           </button>
         </figure>
       </div>
@@ -164,6 +169,7 @@ const Item = ({ url }) => {
           <OpenModal
             isOpen={isOpen}
             url={url}
+            urlWebp={urlWebp}
             setIsOpen={setIsOpen}
             portalContainer={portalContainer}
             key='modal'
