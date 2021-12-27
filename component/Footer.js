@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 const Footer = () => {
+  const year = new Date().getFullYear();
   return (
     <footer className='footer'>
       <ul className='moreBottom'>
@@ -23,7 +24,7 @@ const Footer = () => {
         <p className='madeBy'>
           <Link rel='noreferre' href='https://lipskij.xyz/'>
             <a target='_balnk'>
-              <i>Made by Emil Lipskij</i>
+              <i>Made by Emil Lipskij {year}</i>
             </a>
           </Link>
         </p>

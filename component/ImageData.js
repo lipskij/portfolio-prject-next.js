@@ -23,11 +23,23 @@ const FetchData = [
   {
     url: "/photo2.jpg",
   },
+  {
+    url: "/bike-img1-min.png",
+  },
+  {
+    url: "/bike-img2-min.png",
+  },
+  {
+    url: "/bike-img3-min.png",
+  },
+  {
+    url: "/bike-img4-min.png",
+  },
 ];
 
 function Gal() {
   return (
-    <div className="try">
+    <div className='try'>
       {FetchData.map(({ url }) => (
         <GalleryTwo url={url} key={url} />
       ))}
@@ -36,7 +48,8 @@ function Gal() {
           transform: scale(1);
           line-height: 5;
           column-count: 3;
-          padding: 0 5rem 0 5rem;
+          padding: 3rem 3rem;
+          gap: 0;
         }
         @media screen and (max-width: 480px) {
           .try {
@@ -44,7 +57,6 @@ function Gal() {
             column-count: 1;
             column-gap: 0px;
             margin: 0 auto;
-            padding: 0 2.5rem 0 2.5rem;
           }
         }
       `}</style>

@@ -1,12 +1,12 @@
 import React, { useEffect, useState, useRef } from "react";
 import ReactDOM from "react-dom";
 import { FaRegWindowClose } from "react-icons/fa";
-import styles from '../styles/gallery.module.css';
+import styles from "../styles/gallery.module.css";
 
 const OpenModal = ({ setIsOpen, url, isOpen, portalContainer }) => {
   return isOpen
     ? ReactDOM.createPortal(
-        <div className="isOpen">
+        <div className='isOpen'>
           <FaRegWindowClose
             className={styles.closeBtn}
             onClick={() => setIsOpen(!isOpen)}
@@ -15,7 +15,6 @@ const OpenModal = ({ setIsOpen, url, isOpen, portalContainer }) => {
             .gallery {
               margin: 0 auto;
               display: flex;
-              
             }
             .isOpen {
               display: flex;
@@ -66,13 +65,13 @@ const OpenModal = ({ setIsOpen, url, isOpen, portalContainer }) => {
             }
           `}</style>
 
-          <div className="gallery">
-            <figure className="gallery-image">
-              <button className="img-btn">
+          <div className='gallery'>
+            <figure className='gallery-image'>
+              <button className='img-btn'>
                 <img
                   src={url}
-                  className="img"
-                  alt="Image"
+                  className='img'
+                  alt='Image'
                   onClick={() => setIsOpen(!isOpen)}
                 />
               </button>
@@ -101,12 +100,11 @@ const Item = ({ url }) => {
         }
         .gallery img {
           width: 95%;
-          height: auto;
           transition: all 0.3s;
+          opacity: 0.8;
         }
         .gallery img:hover {
-          transform: scale(1.03);
-          box-shadow: 8px 8px 8px var(--nav-color);
+          opacity: 1;
         }
         .gallery-image {
           width: 100%;
@@ -118,7 +116,7 @@ const Item = ({ url }) => {
           cursor: pointer;
           border: none;
           outline: none;
-          background-color: var(--background-color);
+          background-color: transparent;
           padding: 0;
         }
         @media screen and (max-width: 480px) {
@@ -130,13 +128,13 @@ const Item = ({ url }) => {
           }
         }
       `}</style>
-      <div className="gallery">
-        <figure className="gallery-image">
-          <button className="img-btn">
+      <div className='gallery'>
+        <figure className='gallery-image'>
+          <button className='img-btn'>
             <img
               src={url}
-              className="img"
-              alt="Image"
+              className='img'
+              alt='Image'
               onClick={() => setIsOpen(!isOpen)}
             />
           </button>
@@ -155,7 +153,7 @@ const Item = ({ url }) => {
             url={url}
             setIsOpen={setIsOpen}
             portalContainer={portalContainer}
-            key="modal"
+            key='modal'
           />
         ) : null}
       </div>

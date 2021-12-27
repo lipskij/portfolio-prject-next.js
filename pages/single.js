@@ -4,11 +4,8 @@ import styles from "../styles/Home.module.css";
 import Footer from "../component/Footer";
 import Link from "next/link";
 import ToggleTheme from "../component/ToggleTheme";
-import Gallery from "../component/Gallery";
 import ImageData from "../component/ImageData";
-import SliderImageData from "../component/SliderImageData";
 import {
-  moreText,
   moreTxt,
   gitLogo,
   fbLogo,
@@ -155,9 +152,6 @@ const Single = () => {
           <h1>Gallery</h1>
           <div>
             <ImageData />
-          </div>
-          <div>
-            <Gallery slides={SliderImageData} />
           </div>
           <div id='image-modal'></div>
         </section>
