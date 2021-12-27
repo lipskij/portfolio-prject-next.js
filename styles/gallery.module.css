@@ -2,50 +2,13 @@
   display: flex;
   position: fixed;
   width: 100vw;
-  left: 0;
-  right: 0;
-  top: 9.5%;
+  left: 35%;
+  top: 10%;
   bottom: 0;
   color: var(--text-color);
   transform: scale(3);
   cursor: pointer;
   margin-left: 150px;
-}
-
-.slider {
-  position: relative;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 90vw;
-  height: 100vh;
-  border-top: solid thin black;
-  margin: 10rem 0 0 0;
-}
-.slider .buttons {
-  display: flex;
-  justify-content: space-between;
-  width: 75vw;
-  position: absolute;
-  top: 50%;
-}
-.slider .btnNext {
-  left: 0;
-  filter: drop-shadow(3px 5px 1px var(--nav-color));
-  color: var(--button-color);
-}
-.slider .btnPrev {
-  right: 0;
-  filter: drop-shadow(3px 5px 1px var(--nav-color));
-  color: var(--button-color);
-}
-
-.btnPrev:hover,
-.btnNext:hover {
-  cursor: pointer;
-  transition-duration: 0.3s;
-  color: #6699cc;
 }
 
 .image {
@@ -69,19 +32,5 @@
   }
   .fbLogo {
     margin-left: 8.1rem;
-  }
-  .slider {
-    position: relative;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    padding-top: 1rem;
-  }
-  .slider .buttons {
-    /* z-index: 2; */
-    padding-top: 10rem;
-    justify-content: space-between;
   }
 }
